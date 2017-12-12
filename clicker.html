@@ -18,7 +18,7 @@ color: white;
 </style>
 </head>
 <script>
-var click = 0
+var x = 0
 function click() {
 var x = x+1
 update("clicker")
@@ -38,4 +38,4 @@ function update(button_id)
 {
    document.getElementById(button_id).innerText = x;
    </script>
-   <button id="clicker" onclick='var x = x+1; document.getElementById("clicker").innerText = x;'>CLICK ME!!</button>
+   <button id="clicker" onclick='x += 5; document.getElementById("clicker").innerText = x;'>CLICK ME!!</button>
