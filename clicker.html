@@ -36,8 +36,6 @@ update("clicker")
 <script>
 function update(button_id) 
 {
-   var el = document.getElementById(button_id);
-   el.firstChild.data = x;
-   }
+   document.getElementById(button_id).value = x;
    </script>
    <button id="clicker" onclick="click()">CLICK ME!!</button>
