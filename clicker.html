@@ -17,13 +17,6 @@ color: white;
 }
 </style>
 </head>
-<script>
-var x = 0
-function click() {
-var x = x+1
-update("clicker")
-}
-</script>
   <body>
     <h2 style="background-color:red; color:black; border:5px dashed yellow;">URGENT! Net neutrality may be lost very soon!!! This would allow ISPs to slow or block certain sites! <button onclick='window.open("https://battleforthenet.com")'>How to help</button></h2>
 <div id="title">
@@ -33,11 +26,6 @@ update("clicker")
   <br>
 <br>
 </div>
-<script>
-function update(button_id) 
-{
-   document.getElementById(button_id).innerText = x;
-   </script>
    <button style="height:300px; width:500px; background-color:black; color:red;" id="clicker" onclick='x += 1; document.getElementById("clicker").innerText = x;'><h1>CLICK ME!!</h1></button>
     <button id="password" onclick='document.getElementById("password").innerText = x.toString(16);'>Password</button>
     <button onclick='var pass = prompt("Password"); var x = parseInt(pass, 16); window.alert("click the [ok] to complete recovery from password "+x+"clicks."); document.getElementById("clicker").innerText = x;'>Recover</button>
