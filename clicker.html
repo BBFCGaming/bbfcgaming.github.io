@@ -33,12 +33,12 @@ color: white;
 <br>
 </div>
     <script>
-      function click() {
+      function clickybutton() {
               window.alert('click')
          var x = x+1;
         document.getElementById("clicker").innerText = x;
       }
     </script>
-   <button style="height:300px; width:500px; background-color:black; color:red;" id="clicker" onclick='click();'><h1>CLICK ME!!</h1></button>
+   <button style="height:300px; width:500px; background-color:black; color:red;" id="clicker" onclick='clickybutton();'><h1>CLICK ME!!</h1></button>
     <button id="password" onclick='document.getElementById("password").innerText = x.toString(16);'>Password</button>
     <button onclick='var pass = prompt("Password"); var x = parseInt(pass, 16); window.alert("click the [ok] to complete recovery of "+x+" clicks."); document.getElementById("clicker").innerText = x;'>Recover</button>
