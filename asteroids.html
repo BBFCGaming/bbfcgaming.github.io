@@ -1,7 +1,54 @@
 <!DOCTYPE html>
 <html>
 <script>
-  
+  $(document).ready(function() {
+    animateDiv($('.a'));
+        animateDiv($('.b'));
+        animateDiv($('.c'));
+
+});
+
+function makeNewPosition($container) {
+
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $container.height() - 50;
+    var w = $container.width() - 50;
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+
+    return [nh, nw];
+
+}
+
+function animateDiv($target) {
+    var newq = makeNewPosition($target.parent());
+    var oldq = $target.offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+
+    $target.animate({
+        top: newq[0],
+        left: newq[1]
+    }, speed, function() {
+        animateDiv($target);
+    });
+
+};
+
+function calcSpeed(prev, next) {
+
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+
+    var greatest = x > y ? x : y;
+
+    var speedModifier = 0.1;
+
+    var speed = Math.ceil(greatest / speedModifier);
+
+    return speed;
+
+}​
   // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
   //window.location.replace("https://bbfcgaming.github.io/development.html")
   //Whenever you make a change, create a new release marking the version up 0.0.1 more
@@ -11,13 +58,35 @@
       document.body.appendChild(s);
       s.src='asteroids.min.js';
       void(0);
-      R=0; x1=.1; y1=.05; x2=.25; y2=.24; x3=1.6; y3=.24; x4=300; y4=200; x5=300; y5=200; DI=document.images; DIL=DI.length; function A(){for(i=0; i-DIL; i++){DIS=DI[ i ].style; DIS.position='absolute'; DIS.left=(Math.sin(R*x1+i*x2+x3)*x4+x5)+"px"; DIS.top=(Math.cos(R*y1+i*y2+y3)*y4+y5)+"px"}R++}setInterval('A()',5); void(0);
   }
     </script>
 <head>
   <script src="https://widget.battleforthenet.com/widget.js" async></script>
 <title>Home - BBFC Gaming</title>
 <style>
+  div#container {height:500px;width:500px;}
+
+div.a {
+width: 50px;
+height:50px;
+ background-color:red;
+position:fixed;
+
+}
+div.b {
+width: 50px;
+height:50px;
+ background-color:blue;
+position:fixed;
+
+}
+div.c {
+width: 50px;
+height:50px;
+ background-color:green;
+position:fixed;
+
+}
 body {
 background-color: black;
 color: white;
@@ -49,10 +118,13 @@ color: white;
 <br>
 <hr>
 <br>
-    <img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png">
+    
  <big><b>Click GO to play</b></big>
-    <img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png">
+    <div id="container">
+<div class='a'></div>
+    <div class='b'></div>
+    <div class='c'></div>
+</div>
     <button onclick="asteroids()">GO</button>
-    <img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png"><img src="asteroid.png">
   </body>
 </html>
