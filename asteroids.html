@@ -2,7 +2,6 @@
 <html>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-  go() {
   $(document).ready(function() {
     animateDiv($('.a'));
         animateDiv($('.b'));
@@ -26,8 +25,6 @@
     animateDiv($('.t'));
 
 });
-    asteroids()
-  }
 
 function makeNewPosition($container) {
 
@@ -252,7 +249,7 @@ color: white;
 <hr>
 <br>
     
-    <div id="container">
+    <div id="container" onload="asteroids()">
     <div class='a'></div>
     <div class='b'></div>
     <div class='c'></div>
@@ -274,6 +271,5 @@ color: white;
     <div class='s'></div>
     <div class='t'></div> 
 </div>
-  <button onclick="go()">GO</button>
-  </body>
+    </body>
 </html>
