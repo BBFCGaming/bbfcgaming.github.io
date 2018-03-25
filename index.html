@@ -3,6 +3,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
     var x = 0
+    var cheat = 0
     setInterval(function(){
         $('blink').each(function() {
             $(this).toggle();
@@ -16,7 +17,8 @@
         //}
         pass = prompt("CODE");
         if (pass == "^^vv<><>ba") {
-        $("cheatbanner").html('<div><h3 style="border: 5px solid red">Cheat Mode</h3></div>');
+            $("cheatbanner").html('<div><h3 style="border: 5px solid red">cheatmode.activate = True</h3></div>')
+            cheat = 1
         }
         if (pass == "BBFC") {
             var audio = new Audio('BBFC Gaming Theme.wav');
