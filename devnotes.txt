@@ -1,0 +1,5 @@
+- Whenever you make a change to the website, increase the version number by 0.0.1, and create a new release
+- If you need to temporarily disable the site, uncomment the lines labeled near the bottom of the javascript on most pages
+- Whenever you make a change, it will take a few minutes to apply, so be patient
+- DON'T MESS WITH ANY .html FILES IF YOU DON'T KNOW HTML!!!!
+- If you do break something, you can take the file from the last release, and replace the broken one with it.
