@@ -43,6 +43,6 @@ color: white;
     </script>
    <button style="height:300px; width:500px; background-color:black; color:red;" id="clicker" onclick='clicky();'><h1>CLICK ME!!</h1></button>
     <br>
-          <button id="password" onclick='document.getElementById("password").innerText = x.toString(16);'>Password</button>
-    <button onclick='var pass = prompt("Password"); x = parseInt(pass, 16); window.alert("click the [ok] to complete recovery of "+x+" clicks."); document.getElementById("clicker").innerText = x;'>Recover</button>
+          <button id="password" onclick='window.alert("Keep this code to load from: " + x.toString(16));'>Save</button>
+    <button onclick='var pass = prompt("Enter save code:"); x = parseInt(pass, 16); window.alert("click the [ok] to complete recovery of "+x+" clicks."); document.getElementById("clicker").innerText = x;'>Load</button>
           <button ondblclick='window.alert("Game reset!"); x = -1; clicky();'>Reset (Double click)</button>
