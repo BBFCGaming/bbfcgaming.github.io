@@ -27,6 +27,13 @@
             var audio = new Audio('BBFC Gaming Theme.wav');
             audio.play();
         }
+        if (pass == "I'm bored") {
+            window.alert('How can you be bored while only one click away from the best games ever? Just play the featured game below, or click "Flash Games" or "HTML5 Games" to see a list of games!');
+        }
+        if (pass == "BBFC.apk") {
+            window.alert("Click OK to download the beta version of our app, which will allow you to scan special QR codes for secret games.");
+            window.location.replace("https://bbfcgaming.github.io/gs/BBFC.apk");
+        }
         if (pass == "cheese" ) {
             myWindow = window.open("https://cheese.com", "_blank", "width=200, height=100");
         }
