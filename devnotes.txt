@@ -7,3 +7,4 @@ Notes to BBFC developers:
 - If you DO break something, email bbfcgaming+helpibrokeit@gmail.com, if there is no response within a day or two, you can take the file from the previous release, and replace the broken one with it, however please keep the old file as the original name, but with .save at the end.
 - If you are adding a link and you want it to open in a new tab, format it like this: 
 <a href="https://www.yoursitehere.com/" target="_blank">Name of Link</a>
+-
