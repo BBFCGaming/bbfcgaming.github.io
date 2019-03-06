@@ -46,7 +46,7 @@ color: white;
 </head>
   <body>
 <div id="title">
-<div style="border:5px solid red; text-align:center;" href="https://bbfcgaming.github.io"><h1>BBFC Gaming</h1></div>
+<center><img width="20%" src='bbfclogoscaled.png'></center>
 <hr>
   <button onclick='window.open("games.html")'>Games</button><button onclick='window.open("people.html")'>People</button>
   <br>
@@ -57,23 +57,20 @@ color: white;
 <hr>
 <br>
     <form method="post" enctype="text/plain" action="mailto:bbfcgaming@gmail.com">
-      Name: <input type=text" name="Name" />
-        <br>
         Email: <input type="text" name="Email" />
         <br>
         <br>
-        <b>Which game(s) should we work on?</b>
-        <input type="checkbox" name="games" value="htmlclicker" />HTML5 Clicker
-        <input type="checkbox" name="games" value="endurancetest" />Endurance Test
-        <input type="checkbox" name="games" value="egghatch" />Pokemon Egg Hatching Simulator
-        <input type="checkbox" name="games" value="taproyale" />Pokemon Tap Royale
-        <input type="checkbox" name="games" value="endurancetest" />Endurance Test
-        <input type="checkbox" name="games" value="calc" />Cringy Calculator
-        <input type="checkbox" name="games" value="ninjaparkour" />Ninja Parkour
-        <input type="checkbox" name="games" value="timer" />Timer
-        <input type="checkbox" name="games" value="baconfat" />Congealed Bacon Fat
+        <b>Which Game are You Submitting the Bug on?</b>
+        <select name="game">
+        <option value="Ninja_Parkour">Ninja Parkour</option>
+        <option value="Endurance_Test">Endurance Test</option>
+        <option value="Gem_Factory">Gem Factory</option>
+          <option value="Egg_Hatch_Sim">Pokémon Egg Hatching Simulator</option>
+          <option value="Tap_Royale">Pokémon Tap Royale</option>
+          <option value="Congealed">Congealed Bacon Fat</option>
         <br>
         <br>
+          <!--
         <b>What is your age range?</b>
         <input type="radio" name="age" value="1-10" />1-10 Years
         <input type="radio" name="age" value="11-15" />11-15 Years
@@ -97,6 +94,7 @@ color: white;
         <option value="Sports">Sports</option>
         <option value="Other">Other</option>
         </select>
+-->
         <br>
         <br>
         <br>
