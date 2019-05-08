@@ -4,6 +4,28 @@
        //Hi BBFC Members! To redirect this game to the under development page, uncomment it (remove // from the beginning)
   //window.location.replace("https://bbfcgaming.github.io/GameDevelopment.html")
       </script>
+       <script>
+      function passWord() {
+          var testV = 1;
+          var pass1 = prompt('Password:');
+          while (testV < 3) {
+              if (!pass1)
+                  history.go(-1);
+              if (pass1.toLowerCase() == "itzrewindtime") {
+                  break;
+              }
+              testV+=1;
+              var pass1 =
+                  prompt('That is not of the correct variety of passwords.','Password')
+              }
+          if (pass1.toLowerCase()!="password" & testV ==3)
+              history.go(-1);
+          return " ";
+      }
+    </script>
+       <script>
+              passWord();
+       </script>
       <head>
       
     <!--
