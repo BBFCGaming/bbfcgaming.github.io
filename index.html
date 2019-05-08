@@ -192,27 +192,8 @@
   // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
   //window.location.replace("https://bbfcgaming.github.io/development.html")
   </script>
-  <script>
-      function passWord() {
-          var testV = 1;
-          var pass1 = prompt('Password:',' ');
-          while (testV < 3) {
-              if (!pass1)
-                  history.go(-1);
-              if (pass1.toLowerCase() == "itzrewindtime") {
-                  window.open('members.html');
-                  break;
-              }
-              testV+=1;
-              var pass1 =
-                  prompt('That is not of the correct variety of passwords.','Password:')
-              }
-          if (pass1.toLowerCase()!="password" & testV ==3)
-              history.go(-1);
-          return " ";
-      }
-    </script>
-    </script>
+  
+   
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
@@ -257,7 +238,7 @@ color: white;
 
           <hr>
           <!--DO NOT EMBED THE BUTTONS ON TO THIS PAGE!!!! IF YOU DO YOU WILL BE CONSUMED BY FLEA LARVAE!!!-->
-  <button onclick='window.open("games.html")'>Scratch Games</button><button onclick='window.open("javascript.html")'>HTML5 Games</button><button onclick='window.open("people.html")'>People</button><button onclick='window.open("reviewform.html")'>Questions or Comments?</button><button onclick='window.open("https://bbfcgaming.wix.com/store")'>Store</button><button onclick='window.open("https://discord.gg/RfZYWBP")'>Discord</button><button onclick='window.open("pewdiepie.html")'>Pewdiepie VS T-Series</button><button onclick='window.open("https://www.fiverr.com/bbfcgaming")'>Fiverr</button><button onclick="window.open('chat.html');">Forum</button><button onclick="passWord()">Memebrs Only</button>
+  <button onclick='window.open("games.html")'>Scratch Games</button><button onclick='window.open("javascript.html")'>HTML5 Games</button><button onclick='window.open("people.html")'>People</button><button onclick='window.open("reviewform.html")'>Questions or Comments?</button><button onclick='window.open("https://bbfcgaming.wix.com/store")'>Store</button><button onclick='window.open("https://discord.gg/RfZYWBP")'>Discord</button><button onclick='window.open("pewdiepie.html")'>Pewdiepie VS T-Series</button><button onclick='window.open("https://www.fiverr.com/bbfcgaming")'>Fiverr</button><button onclick="window.open('chat.html');">Forum</button><button onclick="window.open('members.html');">Memebrs Only</button>
 </div>
 <hr>
 <br>
