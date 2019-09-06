@@ -395,14 +395,20 @@ Become a Gem-Selling Tycoon! Now with Saving!
 
 function switchTheme(e) {
     if (e.target.checked) {
+    var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+    if(r == true) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
+        }else {
+        toggleSwitch.checked = false;
+        }
     }
     else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
     }    
 }
+
 
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
