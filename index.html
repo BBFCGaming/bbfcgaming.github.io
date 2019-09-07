@@ -197,7 +197,15 @@
   // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
   //window.location.replace("https://bbfcgaming.github.io/development.html")
   </script>
-  
+    
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+    </script>
    
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -460,6 +468,7 @@ function switchTheme(e) {
     if(r == true) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
+        setCookie(bannertheme, 1, 1);
         }else {
         toggleSwitch.checked = false;
         }
@@ -467,6 +476,7 @@ function switchTheme(e) {
     else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
+        setCookie(bannertheme, 0, 1);
     }    
 }
 
