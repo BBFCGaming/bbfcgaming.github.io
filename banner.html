@@ -13,9 +13,19 @@
 -->
 		
 	<head>
+		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
-<script>
+<style>
+	a:link{
+	color: white;	
+	}
+	a:visited{
+	color: white;	
+	}
+		</style>
+		
+		<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -41,11 +51,10 @@
 function checkCookie() {
   var bannerlinkcolor = getCookie("bannertheme");
   if (bannerlinkcolor = 0) {
-    var linkcolor = "blue";
 	  var textcolor = "black";
 	  var bgcolor = "red";
   } else {
-    var linkcolor = "white";
+
     var textcolor = "white";
 	  var bgcolor = "purple";
     
