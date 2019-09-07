@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">  
     <!--
@@ -204,6 +205,16 @@
   gtag('js', new Date());
   gtag('config', 'UA-129128356-2');
 </script>
+<script>
+$(document).ready(function(){   
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    }); 
+}); 
+</script>
     
 
 
@@ -222,6 +233,7 @@
     --hr-bg: black;
     --button-bg: blue;
     --button-text: white;
+    --featured-games-div: orange;
 }
 
 [data-theme="light"] {
@@ -231,6 +243,7 @@
     --hr-bg: white;
     --button-bg: black;
     --button-text: white;
+    --featured-games-div: purple;
 }
 
 
@@ -311,6 +324,53 @@ input:checked + .slider:before {
 #savebanner {
 background-color: black;
 }
+
+/*Cookie Consent*/
+#cookieConsent {
+    background-color: rgba(20,20,20,0.9);
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
+/*Cookie Consent End*/
 </style>
 </head>
   <body>
@@ -337,7 +397,7 @@ background-color: black;
 <div id="gameselect" style="color:var(--color);">
 Featured Games:
 <hr>
-<div style="border: 2px solid orange;">
+<div style="border: 3px solid var(--featured-games-div);">
 <h3>Ninja Parkour</h3>
 <br>
 Be a ninja box as you jump through many exiting levels!
@@ -349,7 +409,7 @@ Be a ninja box as you jump through many exiting levels!
 </div>
 <br>
 <br>
-    <div style="border: 2px solid orange;">
+    <div style="border: 3px solid var(--featured-games-div);">
 <h3>Gem Factory</h3>
 <br>
 Become a Gem-Selling Tycoon! Now with Saving!
@@ -375,6 +435,7 @@ Become a Gem-Selling Tycoon! Now with Saving!
   </label>
   Enable Light Mode
 </div>
+      <br>
       <cheatbanner></cheatbanner>
           <div style="border:2px solid var(--color); background-color: var(--primary-color);">
             
@@ -392,14 +453,20 @@ Become a Gem-Selling Tycoon! Now with Saving!
 
 function switchTheme(e) {
     if (e.target.checked) {
+    var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+    if(r == true) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
+        }else {
+        toggleSwitch.checked = false;
+        }
     }
     else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
     }    
 }
+
 
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
@@ -414,8 +481,11 @@ if (currentTheme) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
-              <!-- It ends Here -->
-            
+              
+            <div id="cookieConsent">
+    <div id="closeCookieConsent">x</div>
+    This website is using cookies. <a class="cookieConsentOK">That's Fine</a>
+</div>
 
   </body>
 </html>
