@@ -84,15 +84,15 @@ document.getElementById("banner").style.color = textcolor;
 			    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
 				    
-				    if(textColor == "") {
+				    if(textColor == null) {
 					textColor = "black";    
 			    document.getElementById("banner").style.color = textColor;
 				    }else {
 				    
 				    //Force banner to be red
-				    backgroundColor="";
+				    //backgroundColor="";
 				    
-			    if(backgroundColor == "") {
+			    if(backgroundColor == null) {
 					backgroundColor = "red";    
 					    document.getElementById("banner").style.backgroundColor = backgroundColor;
 				    }else {
