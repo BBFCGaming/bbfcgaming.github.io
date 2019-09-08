@@ -83,13 +83,25 @@ document.getElementById("banner").style.color = textcolor;
 			    function checkBanner() {
 			    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
+				    
+				    if(textColor == "") {
+					textColor = "black";    
+			    document.getElementById("banner").style.color = textColor;
+				    }else {
 			    
 			    document.getElementById("banner").style.backgroundColor = backgroundColor;
 			    document.getElementById("banner").style.color = textColor;
+				    }
+				    if(backgroundColor == "") {
+					backgroundColor = "red";    
+					    document.getElementById("banner").style.backgroundColor = backgroundColor;
+				    }else {
+					document.getElementById("banner").style.backgroundColor = backgroundColor;
+			    document.getElementById("banner").style.color = textColor;    
+				    }
 			    }
 			    
 			    checkBanner();
 			    
-			    document.addEventListener('scroll', checkBanner);
 		    </script>
 </html>
