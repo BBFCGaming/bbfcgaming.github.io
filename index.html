@@ -468,7 +468,7 @@ function switchTheme(e) {
     if(r == true) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
-        setCookie("bannertheme", 1, 1);
+        console.log(setCookie("bannertheme", 1, 1););
         }else {
         toggleSwitch.checked = false;
         }
@@ -476,7 +476,7 @@ function switchTheme(e) {
     else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
-        setCookie("bannertheme", 0, 1);
+        console.log(setCookie("bannertheme", 0, 1););
     }    
 }
 
