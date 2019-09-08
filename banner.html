@@ -76,10 +76,16 @@ document.getElementById("banner").style.color = textcolor;
 </script>
 -->
 		    <script>
+			    function checkBanner() {
 			    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
 			    
 			    document.getElementById("banner").style.backgroundColor = backgroundColor;
 			    document.getElementById("banner").style.color = textColor;
+			    }
+			    
+			    checkBanner();
+			    
+			    document.getElementById("banner").addEventListener('scroll', checkBanner);
 		    </script>
 </html>
