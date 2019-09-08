@@ -1,7 +1,16 @@
 
 <!DOCTYPE html>
 <html lang="en">  
-    <!--
+
+
+
+<!--=====================================================================================================-->
+<!--=THIS PAGE IS BEING EDITED BY TurboWafflz!! Do not make any changes until this message is removed!!!=-->
+<!--=====================================================================================================-->
+
+
+
+<!--
     ____  ____  ____________   ______                _            
    / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
   / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
@@ -193,6 +202,15 @@
         if (pass == "cmd.exe"){
             window.location.replace("console.html")
         }
+        if (pass == "I'm writing a letter"){
+            clippy.load('Clippy', function(agent){
+                //agent.show();
+                agent.stop();
+                agent.moveTo(0, 0);
+                agent.play('Greeting');
+                agent.speak("It looks like you're writing a letter. Would you like help?");
+            });
+        }
     }
   // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
   //window.location.replace("https://bbfcgaming.github.io/development.html")
@@ -213,6 +231,7 @@
     
    
 <head>
+<link rel="stylesheet" type="text/css" href="clippy.css" media="all">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
 <script>
@@ -513,6 +532,8 @@ toggleSwitch.addEventListener('change', switchTheme, false);
     <div id="closeCookieConsent">x</div>
     This website is using cookies. <a class="cookieConsentOK">That's Fine</a>
 </div>
+<!-- Clippy.js -->
+<script src="clippy.js"></script>
 
   </body>
 </html>
