@@ -39,6 +39,7 @@
 
   gtag('config', 'UA-129128356-2');
 </script>
+		    <!--
 		<script>
 			function getCookie(cname) {
   var name = cname + "=";
@@ -73,4 +74,12 @@ document.getElementById("banner").style.color = textcolor;
 			document.getElementById("banner").style.backgroundColor = bgcolor;
 			console.log(bannerlinkcolor);
 </script>
+-->
+		    <script>
+			    var textColor = sessionStorage.getItem('textColor');
+			    var backgroundColor = sessionStorage.getItem('bgColor');
+			    
+			    document.getElementById("banner").style.backgroundColor = backgroundColor;
+			    document.getElementById("banner").style.color = textColor;
+		    </script>
 </html>
