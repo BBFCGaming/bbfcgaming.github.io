@@ -473,8 +473,8 @@ function switchTheme(e) {
     if(r == true) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
-        sessionStorage.setItem('textColor', 'black');
-        sessionStorage.setItem('bgColor', 'red');
+        sessionStorage.setItem('bgColor', 'purple');
+        sessionStorage.setItem('textColor', 'white');
         
         }else {
         toggleSwitch.checked = false;
@@ -483,8 +483,8 @@ function switchTheme(e) {
     else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
-        sessionStorage.setItem('bgColor', 'purple');
-        sessionStorage.setItem('textColor', 'white');
+        sessionStorage.setItem('textColor', 'black');
+        sessionStorage.setItem('bgColor', 'red');
     }    
 }
 
