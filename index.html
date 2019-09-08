@@ -198,6 +198,8 @@
   //window.location.replace("https://bbfcgaming.github.io/development.html")
   </script>
     
+    
+    <!--
     <script>
         function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -206,6 +208,9 @@
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
     </script>
+-->
+    
+    
    
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -468,7 +473,8 @@ function switchTheme(e) {
     if(r == true) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light'); //add this
-        setCookie("bannertheme", 1, 1);
+        sessionStorage.setItem('textColor', 'black');
+        sessionStorage.setItem('bgColor', 'red');
         
         }else {
         toggleSwitch.checked = false;
@@ -477,7 +483,8 @@ function switchTheme(e) {
     else {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark'); //add this
-        setCookie("bannertheme", 0, 1);
+        sessionStorage.setItem('bgColor', 'purple');
+        sessionStorage.setItem('textColor', 'white');
     }    
 }
 
