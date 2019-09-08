@@ -402,7 +402,10 @@ background-color: black;
     </center>
        </div>
           <!-- Edit Version Number in version.html-->
+          <!--
           <center><embed style="height:60px;" src="version.html"></center>
+-->
+          <center><iframe id="banner" src="banner.html" height="60px"></iframe></center>
           <center><div id="savebanner" style="border:5px solid red; width:975px;color: black"><img src='savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")'><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
           
           <hr>
@@ -475,6 +478,7 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'light'); //add this
         sessionStorage.setItem('bgColor', 'purple');
         sessionStorage.setItem('textColor', 'white');
+        document.getElementById('banner').src = document.getElementById('banner').src
         
         }else {
         toggleSwitch.checked = false;
@@ -485,6 +489,7 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'dark'); //add this
         sessionStorage.setItem('textColor', 'black');
         sessionStorage.setItem('bgColor', 'red');
+        document.getElementById('banner').src = document.getElementById('banner').src
     }    
 }
 
