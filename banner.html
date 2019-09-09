@@ -83,13 +83,18 @@ document.getElementById("banner").style.color = textcolor;
 			    function checkBanner() {
 				    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
-			    /*
+			    
 				    if(sessionStorage.getItem('textColor') == 'undefined'){
 				    var textColor = 'black';
 			    }
-			    */
+				    if(sessionStorage.getItem('bgColor') == 'undefined' {
+				       var backgroundColor = 'red';
+				       }
+			    		
+				    document.getElementById('banner').style.color = textColor;
 				    
-				    
+				    document.getElementById('banner').style.backgroundColor = backgroundColor;
+				    /*
 				    if(textColor  !== 'black' || 'white') {
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
@@ -104,7 +109,7 @@ document.getElementById("banner").style.color = textcolor;
 				    }else {
 					document.getElementById('banner').style.backgroundColor = backgroundColor; 
 				    }
-			    
+			    */
 				    
 				    
 			    }
