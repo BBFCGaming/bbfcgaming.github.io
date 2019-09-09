@@ -98,7 +98,7 @@ document.getElementById("banner").style.color = textcolor;
 				    v
 				    
 				    */
-				    if (sessionStorage.getItem('textColor').length == 0) {
+				     if($window.sessionStorage.textColor === undefined) {
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
 				    }else {
@@ -106,7 +106,7 @@ document.getElementById("banner").style.color = textcolor;
 				    }
 		
 				    
-			    if (sessionStorage.getItem('bgColor').length == 0) {
+			     if($window.sessionStorage.bgColor === undefined) {
 					var backgroundColor = 'red';    
 					    document.getElementById('banner').style.backgroundColor = backgroundColor;
 				    }else {
