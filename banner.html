@@ -81,11 +81,17 @@ document.getElementById("banner").style.color = textcolor;
 -->
 		    <script>
 			    function checkBanner() {
-			    var textColor = sessionStorage.getItem('textColor');
+				    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
+			    /*
+				    if(sessionStorage.getItem('textColor') == 'undefined'){
+				    var textColor = 'black';
+			    }
+			    */
+				    
 				    
 				    if(textColor  !== 'black' || 'white') {
-					textColor = 'black';    
+					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
 				    }else {
 				    document.getElementById('banner').style.color = textColor;
@@ -93,7 +99,7 @@ document.getElementById("banner").style.color = textcolor;
 		
 				    
 			    if(backgroundColor !== 'red' || 'purple') {
-					backgroundColor = 'red';    
+					var backgroundColor = 'red';    
 					    document.getElementById('banner').style.backgroundColor = backgroundColor;
 				    }else {
 					document.getElementById('banner').style.backgroundColor = backgroundColor; 
