@@ -98,7 +98,7 @@ document.getElementById("banner").style.color = textcolor;
 				    v
 				    
 				    */
-				    if(textColor  !== 'black' || 'white') {
+				    if (sessionStorage.getItem('textColor').length == 0) {
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
 				    }else {
@@ -106,7 +106,7 @@ document.getElementById("banner").style.color = textcolor;
 				    }
 		
 				    
-			    if(backgroundColor !== 'red' || 'purple') {
+			    if (sessionStorage.getItem('backgroundColor').length == 0) {
 					var backgroundColor = 'red';    
 					    document.getElementById('banner').style.backgroundColor = backgroundColor;
 				    }else {
