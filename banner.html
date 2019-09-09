@@ -94,7 +94,7 @@ document.getElementById("banner").style.color = textcolor;
 				    v
 				    
 				    */
-				     if(sessionStorage.textColor !== 'black' || 'white') {
+				     if(sessionStorage.getItem('textColor') !== 'black' || sessionStorage.getItem('textColor') !== 'white'{
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
 				    }else {
@@ -102,7 +102,7 @@ document.getElementById("banner").style.color = textcolor;
 				    }
 		
 				    
-			     if(sessionStorage.bgColor !== 'red' || 'purple') {
+			     if(sessionStorage.getItem('bgColor') !== 'red' || sessionStorage.getItem('bgColor') !== 'purple') {
 					var backgroundColor = 'red';    
 					    document.getElementById('banner').style.backgroundColor = backgroundColor;
 				    }else {
