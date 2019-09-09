@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<!--
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-IM WORKING ON THIS
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
--->
+
 	
     <!--
 
@@ -98,7 +94,7 @@ document.getElementById("banner").style.color = textcolor;
 				    v
 				    
 				    */
-				     if($window.sessionStorage.textColor === undefined) {
+				     if(sessionStorage.textColor !== 'black' || 'white') {
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
 				    }else {
@@ -106,7 +102,7 @@ document.getElementById("banner").style.color = textcolor;
 				    }
 		
 				    
-			     if($window.sessionStorage.bgColor === undefined) {
+			     if(sessionStorage.bgColor !== 'red' || 'purple') {
 					var backgroundColor = 'red';    
 					    document.getElementById('banner').style.backgroundColor = backgroundColor;
 				    }else {
