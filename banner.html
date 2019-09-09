@@ -84,17 +84,15 @@ document.getElementById("banner").style.color = textcolor;
 				    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
 			    
-				    if(sessionStorage.getItem('textColor') == 'undefined'){
-				    var textColor = 'black';
-			    }
-				    if(sessionStorage.getItem('bgColor') == 'undefined' {
-				       var backgroundColor = 'red';
-				       }
-			    		
-				    document.getElementById('banner').style.color = textColor;
+				  
 				    
-				    document.getElementById('banner').style.backgroundColor = backgroundColor;
 				    /*
+				    Sets color when you've never switched the theme before, but doesn't switch when you switch the theme
+				    |
+				    |
+				    v
+				    
+				    */
 				    if(textColor  !== 'black' || 'white') {
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
@@ -109,7 +107,7 @@ document.getElementById("banner").style.color = textcolor;
 				    }else {
 					document.getElementById('banner').style.backgroundColor = backgroundColor; 
 				    }
-			    */
+			    
 				    
 				    
 			    }
