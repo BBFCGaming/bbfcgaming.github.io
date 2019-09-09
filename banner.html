@@ -84,20 +84,18 @@ document.getElementById("banner").style.color = textcolor;
 			    var textColor = sessionStorage.getItem('textColor');
 			    var backgroundColor = sessionStorage.getItem('bgColor');
 				    
-				    if(textColor == null) {
+				    if(textColor  !== "black" || "white") {
 					textColor = "black";    
 			    document.getElementById("banner").style.color = textColor;
 				    }else {
 				    
-				    //Force banner to be red
-				    backgroundColor="";
+		
 				    
-			    if(backgroundColor == null) {
+			    if(backgroundColor !== "red" || "purple") {
 					backgroundColor = "red";    
 					    document.getElementById("banner").style.backgroundColor = backgroundColor;
 				    }else {
-					document.getElementById("banner").style.backgroundColor = backgroundColor;
-			    document.getElementById("banner").style.color = textColor;    
+					document.getElementById("banner").style.backgroundColor = backgroundColor; 
 				    }
 			    
 				    }
