@@ -25,6 +25,11 @@
 	a:visited{
 	color: white;	
 	}
+	body {
+background-color: red;
+color: black;
+}
+	
 	
     
 		</style>
@@ -94,6 +99,8 @@ document.getElementById("banner").style.color = textcolor;
 				    v
 				    
 				    */
+				    
+				    /*
 				     if(sessionStorage.getItem('textColor') !== 'black' || sessionStorage.getItem('textColor') !== 'white'{
 					var textColor = 'black';    
 			    document.getElementById('banner').style.color = textColor;
@@ -108,8 +115,9 @@ document.getElementById("banner").style.color = textcolor;
 				    }else {
 					document.getElementById('banner').style.backgroundColor = backgroundColor; 
 				    }
-			    
-				    
+			    */
+				    document.getElementById('banner').style.color = textColor;
+				    document.getElementById('banner').style.backgroundColor = backgroundColor; 
 				    
 			    }
 			    
