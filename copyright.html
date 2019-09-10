@@ -1,1 +1,18 @@
-<center style="color:white; font-family:monospace;"><p><b>&copy; Copyright 2019 BBFC Gaming</b></p><center>
+<style>
+  .copyright {
+   color: white; 
+  }
+</style>
+<div id="copyright" class="copyright">
+<center style="font-family:monospace;"><p><b>&copy; Copyright 2019 BBFC Gaming</b></p><center>
+  </div>
+  
+  <script>
+    function checkCopy() {
+      var textColor = sessionStorage.getItem('copyTextColor'); 
+      
+      document.getElementById('copyright').style.color = textColor;
+    }
+    
+    checkCopy();
+  </script>
