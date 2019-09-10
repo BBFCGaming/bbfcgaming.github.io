@@ -416,8 +416,8 @@ background-color: black;
        </div>
           <!-- Edit Version Number in version.html-->
           
-          <center><embed style="height:60px;" src="version.html"></center>
-
+          <!--<center><embed style="height:60px;" src="version.html"></center>-->
+<center><iframe id="version" src="version.html" height="60px" frameBorder="0"></iframe></center>
           
           <center><div id="savebanner" style="border:5px solid red; width:975px;color: black"><img src='savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")'><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
           
@@ -495,8 +495,10 @@ function switchTheme(e) {
         sessionStorage.setItem('bgColor', 'purple');
         sessionStorage.setItem('textColor', 'white');
         sessionStorage.setItem('buttonBg', 'black');
+        sessionStorage.setItem('versionTextColor', 'black');
         document.getElementById('banner').src = document.getElementById('banner').src
         document.getElementById('buttons').src = document.getElementById('buttons').src
+        document.getElementById('version').src = document.getElementById('version').src
         
         }else {
         toggleSwitch.checked = false;
@@ -508,8 +510,10 @@ function switchTheme(e) {
         sessionStorage.setItem('textColor', 'black');
         sessionStorage.setItem('bgColor', 'red');
         sessionStorage.setItem('buttonBg', 'blue');
+        sessionStorage.setItem('versionTextColor', 'white');
         document.getElementById('banner').src = document.getElementById('banner').src
         document.getElementById('buttons').src = document.getElementById('buttons').src
+        document.getElementById('version').src = document.getElementById('version').src
     }    
 }
 
