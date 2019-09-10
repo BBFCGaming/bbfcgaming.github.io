@@ -1,4 +1,4 @@
-BBFC Developers, put your name (or username) and the files you're working on here so other devs don't interfere! If possible, please put the best way to contact you at this time.
+BBFC Developers, put your name (or username) and the files you're working on here so other devs don't interfere! If possible, please put the best way to contact you at this time (Please have notifications on or at least check for messages every few minutes.)
 
 Example:
 John Doe: index.html, banner.html (@jdoe#0000 on Discord)
