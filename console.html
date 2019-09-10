@@ -10,9 +10,8 @@
                 if(cmd == "tasklist"){
                  res="WHY WOULD YOU NEED A TASKLIST? JUST LOOK AT THE PROGRAMS YOU HAVE OPEN! YOU DON'T NEED TO KNOW ANYTHING ABOUT BACKGROUND APPLICATIONS!"   
                 }
-                if(cmd =="ping"){
-                 res="You have panged your IP"
-                 
+                if(cmd == "ping"){
+
                                pingLoop();
 }
                 }
@@ -20,6 +19,7 @@
             }
             
             function pingLoop() {
+                res="You have panged your IP"
              document.getElementById('output').innerHTML += res + "<br>";   
                 document.getElementById('output').innerHTML += res + "<br>";   
                 document.getElementById('output').innerHTML += res + "<br>";   
