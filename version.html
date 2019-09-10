@@ -1,1 +1,17 @@
-<center><h2 style="color: white; font-family:monospace;"><pre>Site Version 1.9.1</pre><h2></div></center>
+<style>
+  .version {
+   color: white; 
+  }
+  
+</style>
+<div id="version">
+<center><h2 style="font-family:monospace;"><pre>Site Version 1.9.1</pre><h2></center>
+  </div>
+  
+  <script>
+    function checkColor() {
+     var textColor = sessionStorage.getItem('versionTextColor'); 
+      
+      document.getElementById('version').style.color = textColor;
+    }
+  </script>
