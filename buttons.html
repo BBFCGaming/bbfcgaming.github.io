@@ -1,8 +1,12 @@
 <html>
   <head>
     <style>
+	    :root {
+		--buttonBg: blue;    
+	    }
+	    
        button {
-         background-color: blue;
+         background-color: var(--buttonBg);
          color: white;
       }
     </style>
@@ -23,8 +27,9 @@
   <script>
     function checkButtonColor() {
 			    var backgroundColor = sessionStorage.getItem('buttonBg');
-      
-      document.getElementById('buttons').style.backgroundColor = backgroundColor; 
+      document.documentElement.style
+    .setProperty('--buttonBg', backgroundColor);
+       
     }
     
     checkButtonColor();
