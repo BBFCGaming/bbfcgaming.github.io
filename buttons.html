@@ -7,6 +7,7 @@
       }
     </style>
       </head>
+  <div id='buttons'>
 <button onclick='window.open("games.html")'>Scratch Games</button>
   <button onclick='window.open("javascript.html")'>HTML5 Games</button>
   <button onclick='window.open("downloads.html")'>Downloads</button>
@@ -17,5 +18,16 @@
   <button onclick='window.open("pewdiepie.html")'>Pewdiepie VS T-Series</button>
   <!--<button onclick='window.open("https://www.fiverr.com/bbfcgaming")'>Fiverr</button>-->
   <button onclick="window.open('chat.html');">Forum</button>
+  </div>
+  
+  <script>
+    function checkButtonColor() {
+			    var backgroundColor = sessionStorage.getItem('buttonBg');
+      
+      document.getElementById('buttons').style.backgroundColor = backgroundColor; 
+    }
+    
+    checkButtonColor();
+  </script>
  
 </html>
