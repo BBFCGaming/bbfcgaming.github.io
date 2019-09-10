@@ -3,21 +3,6 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script>
-            function run(cmd){
-                if(cmd == "help"){
-                    res="Error, help not available"
-                }
-                if(cmd == "tasklist"){
-                 res="WHY WOULD YOU NEED A TASKLIST? JUST LOOK AT THE PROGRAMS YOU HAVE OPEN! YOU DON'T NEED TO KNOW ANYTHING ABOUT BACKGROUND APPLICATIONS!"   
-                }
-                if(cmd == "ping"){
-
-                               pingLoop();
-}
-                }
-                document.getElementById('output').innerHTML += res + "<br>";
-            }
-            
             function pingLoop() {
                 res="You have panged your IP"
              document.getElementById('output').innerHTML += res + "<br>";   
@@ -54,6 +39,24 @@
                 document.getElementById('output').innerHTML += res + "<br>";   
                 
             }
+            
+            
+            function run(cmd){
+                if(cmd == "help"){
+                    res="Error, help not available"
+                }
+                if(cmd == "tasklist"){
+                 res="WHY WOULD YOU NEED A TASKLIST? JUST LOOK AT THE PROGRAMS YOU HAVE OPEN! YOU DON'T NEED TO KNOW ANYTHING ABOUT BACKGROUND APPLICATIONS!"   
+                }
+                if(cmd == "ping"){
+
+                               pingLoop();
+}
+                }
+                document.getElementById('output').innerHTML += res + "<br>";
+            }
+            
+            
 
             
         </script>
