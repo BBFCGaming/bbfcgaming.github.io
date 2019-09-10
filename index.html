@@ -478,7 +478,8 @@ Become a Gem-Selling Tycoon! Now with Saving!
                 <!--<input type="image" src="button_support-us-by-viewing-an-ad.png" alt="Support us by Viewing an Ad" width="243" height="30">-->
               </form>
           </div>
-      <center><embed src="copyright.html"></center>
+     <!-- <center><embed src="copyright.html"></center>-->
+          <center><iframe id="copy" src="copyright.html" frameBorder="0"></iframe></center>
       <!-- MAKE THIS LOOK BETTER -->
           <div align="left">
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/526874/t/0"></script>
@@ -496,9 +497,11 @@ function switchTheme(e) {
         sessionStorage.setItem('textColor', 'white');
         sessionStorage.setItem('buttonBg', 'black');
         sessionStorage.setItem('versionTextColor', 'black');
+        sessionStorage.setItem('cpoyTextColor', 'black');
         document.getElementById('banner').src = document.getElementById('banner').src
         document.getElementById('buttons').src = document.getElementById('buttons').src
         document.getElementById('version').src = document.getElementById('version').src
+        document.getElementById('copy').src = document.getElementById('copy').src
         
         }else {
         toggleSwitch.checked = false;
@@ -511,9 +514,11 @@ function switchTheme(e) {
         sessionStorage.setItem('bgColor', 'red');
         sessionStorage.setItem('buttonBg', 'blue');
         sessionStorage.setItem('versionTextColor', 'white');
+        sessionStorage.setItem('copyTextColor', 'white');
         document.getElementById('banner').src = document.getElementById('banner').src
         document.getElementById('buttons').src = document.getElementById('buttons').src
         document.getElementById('version').src = document.getElementById('version').src
+        document.getElementById('copy').src = document.getElementById('copy').src
     }    
 }
 
