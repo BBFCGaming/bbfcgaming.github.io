@@ -427,7 +427,9 @@ background-color: black;
           <center><div id="savebanner" style="border:5px solid red; width:975px;color: black"><img src='savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")'><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
           
           <hr>
-<embed width=100% height=50px src="buttons.html"></div>
+          <iframe id="buttons" scr="buttons.html" height="50px" width="100%" frameBorder="0"></iframe>
+<!--<embed width=100% height=50px src="buttons.html"></div>-->
+          
 <hr>
 
 <br>
@@ -499,6 +501,7 @@ function switchTheme(e) {
         sessionStorage.setItem('textColor', 'white');
         sessionStorage.setItem('buttonBg', 'black');
         document.getElementById('banner').src = document.getElementById('banner').src
+        document.getElementById('buttons').src = document.getElementById('buttons').src
         
         }else {
         toggleSwitch.checked = false;
@@ -511,6 +514,7 @@ function switchTheme(e) {
         sessionStorage.setItem('bgColor', 'red');
         sessionStorage.setItem('buttonBg', 'blue');
         document.getElementById('banner').src = document.getElementById('banner').src
+        document.getElementById('buttons').src = document.getElementById('buttons').src
     }    
 }
 
