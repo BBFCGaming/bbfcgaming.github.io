@@ -5,4 +5,4 @@ John Doe: index.html, banner.html (@jdoe#0000 on Discord)
 
 ----------------------
 
-Tabulate: seehowlongendure.html, egghatchsim.html, gametemplate.html, taproyale.html, timer.html, jitterclicker.html, baconfat.html (@Tabulate#0666 on Discord)
+
