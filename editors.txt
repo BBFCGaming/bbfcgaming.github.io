@@ -5,4 +5,4 @@ John Doe: index.html, banner.html (@jdoe#0000 on Discord)
 
 ----------------------
 
-
+Tabulate: javascript.html (@Tabulte#0666 Discord)
