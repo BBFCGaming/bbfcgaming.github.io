@@ -31,18 +31,39 @@
 
 <title>Games - BBFC Gaming</title>
 <style>
+  :root {
+    --primary-color: black;
+    --color: white;
+    --hr: white;
+    --hr-bg: red;
+    --button-bg: blue;
+    --button-text: white;
+    --new-games-div: orange;
+    --beta-games-div: orange;
+}
+
+[data-theme="light"] {
+    --primary-color: white;
+    --color: black;
+    --hr: black;
+    --hr-bg: black;
+    --button-bg: black;
+    --button-text: white;
+    --new-games-div: black;
+  --beta-games-div: black;
+}
 body {
-background-color: black;
-color: white;
+background-color: var(--primary-color);
+color: var(--color);
 font-family: monospace
 }
 hr {
-color: white;
-background-color:red;
+color: var(--hr);
+background-color: var(--hr-color);
 }
 button {
-background-color: blue;
-color: white;
+background-color: var(--button-bg);
+color: var(--button-text);
 }
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -190,7 +211,7 @@ The sequel to Pokemon Egg Hatching Simulator.
 <br>
 Beta Games (May have bizarre bugs!):
 <hr>
- <div style="border: 2px solid orange;">
+ <div style="border: 2px solid var(--beta-games-div);">
     <h3>Congealed Bacon Fat</h3>
     <br>
     Collect all of the congealed bacon fat you can in order to make your sandwich!
