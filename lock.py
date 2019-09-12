@@ -11,3 +11,4 @@ else:
     os.system("git add --all")
     os.system("git commit -m 'Lock " + os.sys.argv[1] + "'")
     os.system("git push")
+    print("Make sure to unlock the file once you're done!!")
