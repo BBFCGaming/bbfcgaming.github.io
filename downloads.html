@@ -35,6 +35,7 @@
     --button-bg: blue;
     --button-text: white;
     --featured-games-div: orange;
+       --bbfc-txt: red;
 }
 
 [data-theme="light"] {
@@ -45,6 +46,7 @@
     --button-bg: black;
     --button-text: white;
     --featured-games-div: purple;
+       --bbfc-txt: black;
 }
 
 
@@ -125,9 +127,9 @@ input:checked + .slider:before {
 </head>
 <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
 <div id="title">
-       <font color="red">
-<div style="border:5px solid red; text-align:center;"><h1>BBFC Gaming</h1></div>
-       </font>
+       
+<div style="border:5px solid red; text-align:center; color: var(--bbfc-txt)"><h1>BBFC Gaming</h1></div>
+       
        <iframe id="buttons" src="buttons.html" height="50px" width="100%" frameBorder="0"></iframe>
 
 <hr>
@@ -147,7 +149,9 @@ input:checked + .slider:before {
 Download Ninja Parkour for Offline Fun!
 <br>
 <br>
+             <font color="white">
  <button onclick="window.open('ninjaparkour.zip')">Download</button>
+             </font>
 </div>
 <br>
 <br>
@@ -157,7 +161,9 @@ Download Ninja Parkour for Offline Fun!
        Download Gem Factory for Offline Fun!
        <br>
        <br>
+       <font color="white">
        <button onclick='window.open("gemfactory.zip")'>Download</button>
+       </font>
 </div>
 <br>
 <br>
@@ -169,7 +175,9 @@ Download Ninja Parkour for Offline Fun!
        You need JRE to run .jar files: <a href="https://www.java.com/en/download/">Download Here</a>
        <br>
        <br>
+       <font color="white">
        <button onclick='window.open("Snake.zip")'>Download</button>
+       </font>
 </div>
 <br>
 <br>
