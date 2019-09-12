@@ -4,4 +4,4 @@ Devs check this every now and then so you can know if someone needs you to do so
 Example: TurboWafflz | fix downloads.html, add new game to site
 ------------------------------------------
 
-Tabulate | Fix bug for buttons staying blue on light load, ask TurboWafflz what download.js does 
+Tabulate | Ask TurboWafflz what download.js does 
