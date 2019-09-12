@@ -15,3 +15,4 @@ Other stuff:
 - If you are adding a link and you want it to open in a new tab, format it like this: 
 <a href="https://www.yoursitehere.com/" target="_blank">Name of Link</a>
 - Read the text in todo.txt
+- When you add an image, put it in the /image/ folder. Not /images/, /image/
