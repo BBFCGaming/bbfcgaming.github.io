@@ -18,6 +18,9 @@
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
+    if (1 !== 1 ){
+        location.replace("terrifying.html");
+    }
     console.log('\n██████╗ ██████╗ ███████╗ ██████╗\n██╔══██╗██╔══██╗██╔════╝██╔════╝\n██████╔╝██████╔╝█████╗  ██║     \n██╔══██╗██╔══██╗██╔══╝  ██║     \n██████╔╝██████╔╝██║     ╚██████╗\n╚═════╝ ╚═════╝ ╚═╝      ╚═════╝');
     var x = 0
     var cheat = 0
@@ -205,6 +208,9 @@
                 agent.play('Greeting');
                 agent.speak("It looks like you're writing a letter. Would you like help?");
             });
+        }
+        if (pass == "coffee"){
+            location.replace("418.html");
         }
         /*if (pass == "plants"){
              clippy.load('Bonzi', function(agent){
@@ -429,7 +435,7 @@ background-color: black;
           
 <div id="title">
     <center>
-  <center><img width="20%" src='/image/bbfclogoscaled.png' alt="BBFC Logo" oncontextmenu='eastereggcode(); return false;'></center>
+  <center><img width="20%" src='image/bbfclogoscaled.png' alt="BBFC Logo" oncontextmenu='eastereggcode(); return false;'></center>
     </center>
        </div>
           <!-- Edit Version Number in version.html-->
@@ -437,7 +443,7 @@ background-color: black;
           <!--<center><embed style="height:60px;" src="version.html"></center>-->
 <center><iframe id="version" src="version.html" height="60px" frameBorder="0"></iframe></center>
           
-          <center><div id="savebanner" style="border:5px solid red; width:975px;color: black"><img src='/image/savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")'><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
+          <center><div id="savebanner" style="border:5px solid red; width:975px;color: black"><img src='image/savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")'><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
           
           <hr>
           <iframe id="buttons" src="buttons.html" height="50px" width="100%" frameBorder="0"></iframe>
