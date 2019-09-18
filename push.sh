@@ -1,6 +1,7 @@
 #!/bin/bash
 #cm="Pushed from `hostname`"
-read cm "Commit Message"
+echo "Commit Message:"
+read cm
 echo "Adding..."
 git add --all
 echo "Committing with message:" $cm"..."
