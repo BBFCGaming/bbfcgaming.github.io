@@ -5,3 +5,5 @@ Example: TurboWafflz | fix downloads.html, add new game to site
 ------------------------------------------
 
 Tabulate | Go through all the files and change /image/ to image/
+
+TurboWafflz | Make Google crawl the site again (I think you can do it from search.google.com) (its to update the description)
