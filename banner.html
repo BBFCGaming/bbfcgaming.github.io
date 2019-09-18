@@ -16,28 +16,15 @@
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
-        <style>
-            a:link{
-                color: white;	
-            }
-            a:visited{
-                color: white;	
-            }
 
-            .banner {
-                background-color: red;
-                color: black;
-            }
-
-
-
-        </style>
-
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "homestyle.css" />
 
     </head>
     <body>
 
-        <div id="banner" class="banner" style="border:2px dotted orange; width:100%; "><center>Check out our <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ" target="_blank">Youtube</a> Channel! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Help reinstate Net Neutrality! Visit <a href="https://www.battleforthenet.com/" target="_blank">https://www.battleforthenet.com/</a>!!<center></div>
+        <div id="banner" class="banner" style="border:2px dotted orange; width:100%; "><center>Check out our <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ" class="bannerlink" target="_blank">Youtube</a> Channel! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Help reinstate Net Neutrality! Visit <a href="https://www.battleforthenet.com/" class="bannerlink" target="_blank">https://www.battleforthenet.com/</a>!!<center></div>
 
             </body>   
             <script>
@@ -48,73 +35,12 @@
 
                 gtag('config', 'UA-129128356-2');
             </script>
-            <!--
-<script>
-function getCookie(cname) {
-var name = cname + "=";
-var ca = document.cookie.split(';');
-for(var i = 0; i < ca.length; i++) {
-var c = ca[i];
-while (c.charAt(0) == ' ') {
-c = c.substring(1);
-}
-if (c.indexOf(name) == 0) {
-return c.substring(name.length, c.length);
-}
-}
-return "";
-}
 
-function checkCookie() {
-var bannerlinkcolor = getCookie("bannertheme");
-if (bannerlinkcolor = 0) {
-var textcolor = "#000000";
-var bgcolor = "#ff0000";
-} else {
-
-var textcolor = "#FFFFFF";
-var bgcolor = "#800080";
-
-}
-}
-checkCookie();
-
-document.getElementById("banner").style.color = textcolor;
-document.getElementById("banner").style.backgroundColor = bgcolor;
-console.log(bannerlinkcolor);
-</script>
--->
             <script>
                 function checkBanner() {
                     var textColor = sessionStorage.getItem('textColor');
                     var backgroundColor = sessionStorage.getItem('bgColor');
 
-
-
-                    /*
-				    Sets color when you've never switched the theme before, but doesn't switch when you switch the theme
-				    |
-				    |
-				    v
-
-				    */
-
-                    /*
-				     if(sessionStorage.getItem('textColor') !== 'black' || sessionStorage.getItem('textColor') !== 'white'{
-					var textColor = 'black';    
-			    document.getElementById('banner').style.color = textColor;
-				    }else {
-				    document.getElementById('banner').style.color = textColor;
-				    }
-
-
-			     if(sessionStorage.getItem('bgColor') !== 'red' || sessionStorage.getItem('bgColor') !== 'purple') {
-					var backgroundColor = 'red';    
-					    document.getElementById('banner').style.backgroundColor = backgroundColor;
-				    }else {
-					document.getElementById('banner').style.backgroundColor = backgroundColor; 
-				    }
-			    */
                     document.getElementById('banner').style.color = textColor;
                     document.getElementById('banner').style.backgroundColor = backgroundColor; 
 

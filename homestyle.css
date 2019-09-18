@@ -143,3 +143,15 @@ background-color: black;
     background-color: #E0C91F;
 }
 /*Cookie Consent End*/
+
+.bannerlink { color: white; }
+.bannerlink:visited { color: white; }
+.banner {
+  background-color: red;
+  color: black;
+}
+
+.pewdiepie-color-box {
+  background-color: white;
+  width: 250px;
+  height: 200px;
