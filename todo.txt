@@ -4,4 +4,4 @@ Devs check this every now and then so you can know if someone needs you to do so
 Example: TurboWafflz | fix downloads.html, add new game to site
 ------------------------------------------
 
-Tabulate | Go through all the files and change /image/ to image/, put easter eggs into .js?
+Tabulate | Go through all the files and change /image/ to image/
