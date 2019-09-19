@@ -3,5 +3,6 @@ Devs check this every now and then so you can know if someone needs you to do so
 
 Example: TurboWafflz | fix downloads.html, add new game to site
 ------------------------------------------
+The cookies banner might be broken if their still an underline in like an hour
 
 TurboWafflz | Make Google crawl the site again (I think you can do it from search.google.com) (its to update the description)
