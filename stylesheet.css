@@ -113,14 +113,16 @@ background-color: black;
     display: none;
     z-index: 9999;
 }
+/*
 #cookieConsent a {
-    color: white;
-    text-decoration: underline;
+    color: #4B8EE7;
+    text-decoration: none;
 }
-#cookieConsent a:hover {
-    color: white;
-    text-decoration: none;    
-}
+*/
+#cookieConsent a:link { color: white; }
+#cookieConsent a:visited { color: white; }
+#cookieConsent a:hover { color: #ededed; }
+#cookieConsent a:active { color: white; }
 #closeCookieConsent {
     float: right;
     display: inline-block;
