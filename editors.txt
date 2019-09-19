@@ -8,4 +8,4 @@ John Doe: index.html, banner.html (@jdoe#0000 on Discord)
 
 ----------------------
 
-Tabulate: homestyle.css
+Tabulate: stylesheet.css, index.html
