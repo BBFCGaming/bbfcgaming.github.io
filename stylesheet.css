@@ -112,9 +112,10 @@ background-color: black;
     right: 0;
     display: none;
     z-index: 9999;
+    a:link 
 }
 #cookieConsent a {
-    color: #4B8EE7;
+    color: white;
     text-decoration: none;
 }
 #closeCookieConsent {
