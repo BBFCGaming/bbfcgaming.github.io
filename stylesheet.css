@@ -155,3 +155,7 @@ background-color: black;
   background-color: white;
   width: 250px;
   height: 200px;
+    
+    .learnmorelink { color:white; }
+    .learnmorelink:visited { color:white; }
+    .learnmorelink:hover { color:white; text-decoration: none; }
