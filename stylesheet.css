@@ -115,7 +115,11 @@ background-color: black;
 }
 #cookieConsent a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
+}
+#cookieConsent a:hover {
+    color: white;
+    text-decoration: none;    
 }
 #closeCookieConsent {
     float: right;
@@ -155,4 +159,5 @@ background-color: black;
   background-color: white;
   width: 250px;
   height: 200px;
+}
     
