@@ -17,8 +17,10 @@ var pass;
             window.alert('How can you be bored while only one click away from the best games ever? Just play the featured game below, or click "Flash Games" or "HTML5 Games" to see a list of games!');
         }
         if (pass == "BBFC.apk") {
-            window.alert("Click OK to download the beta version of our app, which will allow you to scan special QR codes for secret games.");
+            var r = confirm("Click OK to download the beta version of our app, which will allow you to scan special QR codes for secret games.");
+            if(r == true) {
             window.location.replace("https://bbfcgaming.github.io/gs/BBFC.apk");
+            }
         }
         if (pass == "cheese" ) {
             window.location.replace("cheese.png");
