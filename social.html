@@ -1,69 +1,78 @@
 <!DOCTYPE html>  
 <html>
-<script>
-  // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
-  //window.location.replace("https://bbfcgaming.github.io/development.html")
-  //Whenever you make a change, create a new release marking the version up 0.0.1 more
-  </script>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
+        //window.location.replace("https://bbfcgaming.github.io/development.html")
+        //Whenever you make a change, create a new release marking the version up 0.0.1 more
+    </script>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  gtag('config', 'UA-129128356-2');
-</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  <script src="https://widget.battleforthenet.com/widget.js" async></script>
-  
-    <!--
+            gtag('config', 'UA-129128356-2');
+        </script>
 
-    ____  ____  ____________   ______                _            
-   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
-  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
- / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+        <script src="https://widget.battleforthenet.com/widget.js" async></script>
+
+        <!--
+
+____  ____  ____________   ______                _            
+/ __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+/ __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+/ /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
 /_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
-                                                         /____/   
+/____/   
 
 -->
 
-<title>Social - BBFC Gaming</title>
-<style>
-body {
-background-color: black;
-color: white;
-font-family: monospace
-}
-hr {
-color: white;
-background-color:red;
-}
-button {
-background-color: blue;
-color: white;
-}
-</style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5913729322055358",
-          enable_page_level_ads: true
-     });
-</script>
-</head>
-  <body>
-<div id="title">
-  <embed style="height:50px; width:100%; " src="banner.html">
-<img style="width:100%; " src="image/bbfc.png">
-   <hr>
-  <!-- Edit the Buttons in buttons.html-->
-  <embed style="width:100%; height:60px;" src="buttons.html">
-  <h3>Social media:</h3>
-  <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ">YouTube</a><br>
-  <a href="https://twitter.com/bbfcgaming">Twitter</a><br>
-  <a href="https://discord.gg/TrFZzHu">Discord</a>
-  
-    <center><embed src="copyright.html"></center>
-    </html>
+        <title>Social - BBFC Gaming</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                font-family: monospace
+            }
+            hr {
+                color: white;
+                background-color:red;
+            }
+            button {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-5913729322055358",
+                enable_page_level_ads: true
+            });
+        </script>
+    </head>
+    <body>
+        <div id="title">
+            <embed style="height:50px; width:100%; " src="banner.html">
+            <img style="width:100%; " src="image/bbfc.png">
+            <hr>
+            <!--Buttons-->
+            <div id="buttons">
+                <a href="nojs.html">No JavaScript?</a>
+            </div>
+            <script>
+                $(function(){
+                    $("#buttons").load("buttons.html");
+                });
+            </script>
+            <h3>Social media:</h3>
+            <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ">YouTube</a><br>
+            <a href="https://twitter.com/bbfcgaming">Twitter</a><br>
+            <a href="https://discord.gg/TrFZzHu">Discord</a>
+
+            <center><embed src="copyright.html"></center>
+            </html>

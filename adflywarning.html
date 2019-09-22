@@ -6,14 +6,15 @@
         //window.location.replace("https://bbfcgaming.github.io/GameDevelopment.html")
     </script>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<!--
-    ____  ____  ____________   ______                _            
-   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
-  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
- / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+        <!--
+____  ____  ____________   ______                _            
+/ __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+/ __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+/ /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
 /_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
-                                                         /____/   
+/____/   
 -->      
 
 
@@ -46,26 +47,33 @@
     <embed style="height:50px; width:100%; " src="banner.html">
     <div id="title">
         <div style="border:5px solid red; text-align:center;"><h1>BBFC Gaming</h1></div>
-        <embed width=100% height=50px src="buttons.html"></div>
-
-    <hr>
-    <br>
-    <br>
+        <!--Buttons-->
+        <div id="buttons">
+            <a href="nojs.html">No JavaScript?</a>
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("buttons.html");
+            });
+        </script>
+        <hr>
+        <br>
+        <br>
     </div>
-<center><img src="image/warning.png" alt="Warning"><center>
-    <br>
+    <center><img src="image/warning.png" alt="Warning"><center>
+        <br>
 
 
-    <center><big><h1>WARNING</h1></big></center>
-    <br>
-    <br>
-    <font color="yellow">
-        <h2>Warning: Adfly is know to have deceptive advertising. If you get a popup saying there is something wrong with your computer, do not click anything, just close your web browser.</h2>
-    </font>
-    <br>
-    <br>
-    <br>
-    <form action="http://clesolea.com/4HVZ">
-        <center><input type="image" src="button_proceed-to-ad.png" alt="Proceed to Ad"></center>
-    </form>
-    </html>
+        <center><big><h1>WARNING</h1></big></center>
+        <br>
+        <br>
+        <font color="yellow">
+            <h2>Warning: Adfly is know to have deceptive advertising. If you get a popup saying there is something wrong with your computer, do not click anything, just close your web browser.</h2>
+        </font>
+        <br>
+        <br>
+        <br>
+        <form action="http://clesolea.com/4HVZ">
+            <center><input type="image" src="button_proceed-to-ad.png" alt="Proceed to Ad"></center>
+        </form>
+        </html>

@@ -1,105 +1,113 @@
 <!DOCTYPE html>
 <html>
-<script>
-       //Hi BBFC Members! To redirect this game to the under development page, uncomment it (remove // from the beginning)
-  //window.location.replace("https://bbfcgaming.github.io/GameDevelopment.html")
-      </script>
-      
+    <script>
+        //Hi BBFC Members! To redirect this game to the under development page, uncomment it (remove // from the beginning)
+        //window.location.replace("https://bbfcgaming.github.io/GameDevelopment.html")
+    </script>
+
     <!--
 
-    ____  ____  ____________   ______                _            
-   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
-  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
- / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+____  ____  ____________   ______                _            
+/ __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+/ __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+/ /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
 /_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
-                                                         /____/   
+/____/   
 
 -->
-       
-       <head>
-             <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-129128356-2');
-</script>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-              <title>Pewdiepie VS T-Series - BBFC Gaming</title>
-              
-              <link rel = "stylesheet"
+            gtag('config', 'UA-129128356-2');
+        </script>
+
+        <title>Pewdiepie VS T-Series - BBFC Gaming</title>
+
+        <link rel = "stylesheet"
               type = "text/css"
               href = "stylesheet.css" />
-</head>
-<center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
-<div id="title">
-<div style="border:5px solid red; text-align:center;"><h1>BBFC Gaming</h1></div>
-<iframe id="buttons" src="buttons.html" height="50px" width="100%" frameBorder="0"></iframe>
-<hr>
-<br>
-<br>
-</div>
-       <center>
-  <h2>Pewdiepie VS T-Series</h2>
-  <div class="pewdiepie-color-box">
-         <iframe src="https://youcount.github.io/e/#!/PewDiePie" height="100" width="250" frameborder="0"></iframe>
+    </head>
+    <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
+    <div id="title">
+        <div style="border:5px solid red; text-align:center;"><h1>BBFC Gaming</h1></div>
+        <!--Buttons-->
+        <div id="buttons">
+            <a href="nojs.html">No JavaScript?</a>
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("buttons.html");
+            });
+        </script>        <hr>
+        <br>
+        <br>
+    </div>
+    <center>
+        <h2>Pewdiepie VS T-Series</h2>
+        <div class="pewdiepie-color-box">
+            <iframe src="https://youcount.github.io/e/#!/PewDiePie" height="100" width="250" frameborder="0"></iframe>
 
-<iframe src="https://youcount.github.io/e/#!/tseriesmusic" height="100" width="250" frameborder="0"></iframe>
-              </div>
-              </center>
-              <script>
-      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    
-    function switchTheme(e) {
-        if (e.target.checked) {
-        var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
-        if(r == true) {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light'); //add this
-            sessionStorage.setItem('bgColor', 'purple');
-            sessionStorage.setItem('textColor', 'white');
-            sessionStorage.setItem('buttonBg', 'black');
-            sessionStorage.setItem('versionTextColor', 'black');
-            sessionStorage.setItem('copyTextColor', 'black');
-            document.getElementById('banner').src = document.getElementById('banner').src
-            document.getElementById('buttons').src = document.getElementById('buttons').src
-            document.getElementById('version').src = document.getElementById('version').src
-            document.getElementById('copy').src = document.getElementById('copy').src
-            
-            }else {
-            toggleSwitch.checked = false;
+            <iframe src="https://youcount.github.io/e/#!/tseriesmusic" height="100" width="250" frameborder="0"></iframe>
+        </div>
+    </center>
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+                if(r == true) {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light'); //add this
+                    sessionStorage.setItem('bgColor', 'purple');
+                    sessionStorage.setItem('textColor', 'white');
+                    sessionStorage.setItem('buttonBg', 'black');
+                    sessionStorage.setItem('versionTextColor', 'black');
+                    sessionStorage.setItem('copyTextColor', 'black');
+                    document.getElementById('banner').src = document.getElementById('banner').src
+                    document.getElementById('buttons').src = document.getElementById('buttons').src
+                    document.getElementById('version').src = document.getElementById('version').src
+                    document.getElementById('copy').src = document.getElementById('copy').src
+
+                }else {
+                    toggleSwitch.checked = false;
+                }
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark'); //add this
+                sessionStorage.setItem('textColor', 'black');
+                sessionStorage.setItem('bgColor', 'red');
+                sessionStorage.setItem('buttonBg', 'blue');
+                sessionStorage.setItem('versionTextColor', 'white');
+                sessionStorage.setItem('copyTextColor', 'white');
+                document.getElementById('banner').src = document.getElementById('banner').src
+                document.getElementById('buttons').src = document.getElementById('buttons').src
+                document.getElementById('version').src = document.getElementById('version').src
+                document.getElementById('copy').src = document.getElementById('copy').src
+            }    
+        }
+
+
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'light') {
+                toggleSwitch.checked = true;
             }
         }
-        else {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark'); //add this
-            sessionStorage.setItem('textColor', 'black');
-            sessionStorage.setItem('bgColor', 'red');
-            sessionStorage.setItem('buttonBg', 'blue');
-            sessionStorage.setItem('versionTextColor', 'white');
-            sessionStorage.setItem('copyTextColor', 'white');
-            document.getElementById('banner').src = document.getElementById('banner').src
-            document.getElementById('buttons').src = document.getElementById('buttons').src
-            document.getElementById('version').src = document.getElementById('version').src
-            document.getElementById('copy').src = document.getElementById('copy').src
-        }    
-    }
-    
-    
-    
-    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-    
-    if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme);
-    
-        if (currentTheme === 'light') {
-            toggleSwitch.checked = true;
-        }
-    }
-    
-    toggleSwitch.addEventListener('change', switchTheme, false);
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
-              </html>
+</html>
 
