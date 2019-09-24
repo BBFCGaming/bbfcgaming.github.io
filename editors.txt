@@ -7,5 +7,3 @@ Example:
 John Doe: index.html, banner.html (@jdoe#0000 on Discord)
 
 ----------------------
-
-Tabulate: index.html, buttons.html (@Tabulate#0666 Discord)
