@@ -188,9 +188,12 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
                             sessionStorage.setItem('versionTextColor', 'black');
                             sessionStorage.setItem('copyTextColor', 'black');
                             document.getElementById('banner').src = document.getElementById('banner').src
-                            document.getElementById('buttons').src = document.getElementById('buttons').src
                             document.getElementById('version').src = document.getElementById('version').src
                             document.getElementById('copy').src = document.getElementById('copy').src
+
+                            $(function(){
+                                $("#buttons").load("buttons.html");
+                            });
 
                         }else {
                             toggleSwitch.checked = false;
@@ -205,9 +208,12 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
                         sessionStorage.setItem('versionTextColor', 'white');
                         sessionStorage.setItem('copyTextColor', 'white');
                         document.getElementById('banner').src = document.getElementById('banner').src
-                        document.getElementById('buttons').src = document.getElementById('buttons').src
                         document.getElementById('version').src = document.getElementById('version').src
                         document.getElementById('copy').src = document.getElementById('copy').src
+
+                        $(function(){
+                            $("#buttons").load("buttons.html");
+                        });
                     }    
                 }
 
