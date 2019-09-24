@@ -8,4 +8,4 @@ John Doe: index.html, banner.html (@jdoe#0000 on Discord)
 
 ----------------------
 
-TurboWafflz Everything, redoing buttons (@TurboWafflz#7927 on Discord)
+Tabulate: index.html, buttons.html (@Tabulate#0666 Discord)
