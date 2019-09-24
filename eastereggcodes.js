@@ -205,6 +205,9 @@ var pass;
         if (pass == "H2SO4"){
             alert("Sulfuric Acid");
         }
+        if (pass == "Am I the meat manager?"){
+            window.open("https://meat-manager-checker.turbowafflz.repl.run");
+        }
     }
 
   
