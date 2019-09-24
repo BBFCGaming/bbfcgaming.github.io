@@ -67,39 +67,45 @@
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
         function switchTheme(e) {
-            if (e.target.checked) {
-                var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
-                if(r == true) {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light'); //add this
-                    sessionStorage.setItem('bgColor', 'purple');
-                    sessionStorage.setItem('textColor', 'white');
-                    sessionStorage.setItem('buttonBg', 'black');
-                    sessionStorage.setItem('versionTextColor', 'black');
-                    sessionStorage.setItem('copyTextColor', 'black');
-                    document.getElementById('banner').src = document.getElementById('banner').src
-                    document.getElementById('buttons').src = document.getElementById('buttons').src
-                    document.getElementById('version').src = document.getElementById('version').src
-                    document.getElementById('copy').src = document.getElementById('copy').src
+                    if (e.target.checked) {
+                        var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+                        if(r == true) {
+                            document.documentElement.setAttribute('data-theme', 'light');
+                            localStorage.setItem('theme', 'light'); //add this
+                            sessionStorage.setItem('bgColor', 'purple');
+                            sessionStorage.setItem('textColor', 'white');
+                            sessionStorage.setItem('buttonBg', 'black');
+                            sessionStorage.setItem('versionTextColor', 'black');
+                            sessionStorage.setItem('copyTextColor', 'black');
+                            document.getElementById('banner').src = document.getElementById('banner').src
+                            document.getElementById('version').src = document.getElementById('version').src
+                            document.getElementById('copy').src = document.getElementById('copy').src
 
-                }else {
-                    toggleSwitch.checked = false;
+                            $(function(){
+                                $("#buttons").load("buttons.html");
+                            });
+
+                        }else {
+                            toggleSwitch.checked = false;
+                        }
+                    }
+                    else {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark'); //add this
+                        sessionStorage.setItem('textColor', 'black');
+                        sessionStorage.setItem('bgColor', 'red');
+                        sessionStorage.setItem('buttonBg', 'blue');
+                        sessionStorage.setItem('versionTextColor', 'white');
+                        sessionStorage.setItem('copyTextColor', 'white');
+                        document.getElementById('banner').src = document.getElementById('banner').src
+                        document.getElementById('version').src = document.getElementById('version').src
+                        document.getElementById('copy').src = document.getElementById('copy').src
+
+                        $(function(){
+                            $("#buttons").load("buttons.html");
+                        });
+                    }    
                 }
-            }
-            else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark'); //add this
-                sessionStorage.setItem('textColor', 'black');
-                sessionStorage.setItem('bgColor', 'red');
-                sessionStorage.setItem('buttonBg', 'blue');
-                sessionStorage.setItem('versionTextColor', 'white');
-                sessionStorage.setItem('copyTextColor', 'white');
-                document.getElementById('banner').src = document.getElementById('banner').src
-                document.getElementById('buttons').src = document.getElementById('buttons').src
-                document.getElementById('version').src = document.getElementById('version').src
-                document.getElementById('copy').src = document.getElementById('copy').src
-            }    
-        }
 
 
 

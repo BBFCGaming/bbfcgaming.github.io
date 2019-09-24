@@ -6,6 +6,7 @@
     --button-bg: blue;
     --button-text: white;
     --featured-games-div: orange;
+    --beta-games-div: orange;
 }
 
 [data-theme="light"] {
@@ -16,6 +17,7 @@
     --button-bg: black;
     --button-text: white;
     --featured-games-div: purple;
+    --beta-games-div: purple;
 }
 
 
