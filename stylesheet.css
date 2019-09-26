@@ -36,7 +36,7 @@ background-color: var(--button-bg);
 color: var(--button-test);
 }
 
-/*Simple css to style it like a toggle switch*/
+/*Slider Button Start*/
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -94,6 +94,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+/*Slider Button End*/
 
 #savebanner {
 background-color: black;
