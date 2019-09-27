@@ -7,6 +7,8 @@
     --button-text: white;
     --featured-games-div: orange;
     --beta-games-div: orange;
+    --privacy-link-root: white;
+    --privacy-link-hover: #f0f0f0;
 }
 
 [data-theme="light"] {
@@ -18,6 +20,8 @@
     --button-text: white;
     --featured-games-div: purple;
     --beta-games-div: purple;
+    --privacy-link-root: black;
+    --privacy-link-hover: #4a4a4a;
 }
 
 
@@ -161,4 +165,9 @@ background-color: black;
   width: 250px;
   height: 200px;
 }
+
+.privacy-link {color: var(--privacy-link-root);}
+.privacy-link:visited {color: var(--privacy-link-root);}
+.privacy-link:hover {color: var(--privacy-link-hover);}
+.privacy-link:active {color: var(--privacy-link-root);}
     
