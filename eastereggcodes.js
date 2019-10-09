@@ -154,7 +154,7 @@ var pass;
             window.location.replace("image/Carpetbagger.png");
         }
          if (pass == "BBFCraft") {
-            window.location.replace("BBFCraft-20190112T011323Z-001.zip");
+            window.location.replace("bbfcraftsuper.zip");
         }
         if (pass == "The green one is green") {
             window.alert("Yes it is");
