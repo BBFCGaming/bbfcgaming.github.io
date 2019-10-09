@@ -151,7 +151,7 @@ var pass;
             window.close();
         }
           if (pass == "Bags of Carpet" ) {
-            window.location.replace("Carpetbagger.png");
+            window.location.replace("image/Carpetbagger.png");
         }
          if (pass == "BBFCraft") {
             window.location.replace("BBFCraft-20190112T011323Z-001.zip");
