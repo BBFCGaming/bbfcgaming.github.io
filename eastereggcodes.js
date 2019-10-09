@@ -199,7 +199,7 @@ var pass;
 
             });
             }*/
-        if (pass == "!1=1"){
+        if (pass == "1!=1"){
             location.replace("terrifying.html");
         }
         if (pass == "H2SO4"){
