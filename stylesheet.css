@@ -9,6 +9,7 @@
     --beta-games-div: orange;
     --privacy-link-root: white;
     --privacy-link-hover: #828282;
+    --new-game-div: red;
 }
 
 [data-theme="light"] {
@@ -22,6 +23,7 @@
     --beta-games-div: purple;
     --privacy-link-root: black;
     --privacy-link-hover: #828282;
+    --new-game-div: red;
 }
 
 
