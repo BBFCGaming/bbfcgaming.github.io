@@ -172,4 +172,9 @@ background-color: black;
 .privacy-link:visited {color: var(--privacy-link-root);}
 .privacy-link:hover {color: var(--privacy-link-hover);}
 .privacy-link:active {color: var(--privacy-link-root);}
+
+.buttons-link {color: var(--privacy-link-root);}
+.buttons-link:visited {color: var(--privacy-link-root);}
+.buttons-link:hover {color: var(--privacy-link-hover);}
+.buttons-link:active {color: var(--privacy-link-root);}
     
