@@ -45,19 +45,19 @@
                 $("#buttons").load("buttons.html");
             });
         </script>
-        <script>
-            function close(){
-                window.open('https://scratch.mit.edu/accounts/login/');
-            }
-        </script>
         <hr>
         <br>
         <br>
     </div>
     <h2>Salmon Says</h2>
     <div id="signin">
-    <button style="background-color:orange;" onclick="close();">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
+    <button style="background-color:orange;" onclick="close()">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
     </div>
+    <script>
+            function close(){
+                window.open('https://scratch.mit.edu/accounts/login/');
+            }
+        </script>
         <br>
     <br>
     <br>
