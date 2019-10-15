@@ -47,7 +47,8 @@
         </script>
         <script>
             function close(){
-           document.getElementById("signin").innerHTML='';
+           $('#signin').toggle();
+                window.open('https://scratch.mit.edu/accounts/login/');
             }
         </script>
         <hr>
@@ -56,7 +57,7 @@
     </div>
     <h2>Salmon Says</h2>
     <div id="signin">
-    <button style="background-color:orange;" onclick="window.open('https://scratch.mit.edu/accounts/login/'); close();">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
+    <button style="background-color:orange;" onclick="close();">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
     </div>
         <br>
     <br>
