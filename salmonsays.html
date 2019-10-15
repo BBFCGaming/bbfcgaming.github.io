@@ -49,6 +49,8 @@
         <br>
         <br>
     </div>
+    <!--HERERERERERERERERERERERERERERERERE-->
+    
     <h2>Salmon Says</h2>
     <div id="signin">
     <button style="background-color:orange;" onclick="custom()">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
@@ -57,8 +59,17 @@
             function custom() {
                 window.open('https://scratch.mit.edu/accounts/login/');
                 document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
+                sessionStorage.setItem('signedIn', 'true');
             }
         </script>
+    <script>
+        function checkSignedIn() {
+        var signedIn = sessionStorage.getItem('signedIn');
+            if(signedIn == "true"){
+                document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
+            }
+        }
+    </script>
         <br>
     <br>
     <br>
