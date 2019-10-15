@@ -45,13 +45,20 @@
                 $("#buttons").load("buttons.html");
             });
         </script>
+        <script>
+            function close(){
+           document.getElementById("signin").innerHTML='';
+            }
+        </script>
         <hr>
         <br>
         <br>
     </div>
     <h2>Salmon Says</h2>
-    <button style="background-color:orange;" onclick="window.open('https://scratch.mit.edu/accounts/login/');">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
-    <br>
+    <div id="signin">
+    <button style="background-color:orange;" onclick="window.open('https://scratch.mit.edu/accounts/login/'); close();">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
+    </div>
+        <br>
     <br>
     <br>
     This game uses sounds! Turn up your volume!
