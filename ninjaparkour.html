@@ -42,7 +42,25 @@ color: white;
 <br>
 </div>
 <h2>Ninja Parkour</h2>
-<button style="background-color:orange;" onclick="window.open('https://scratch.mit.edu/accounts/login/');">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
+ <div id="signin">
+    <button style="background-color:orange;" onclick="custom()">Sign in to Scratch</button>(To save scores, etc. This does not give us any access to your account. Once you have signed in, you can close the Scratch website.)
+    </div>
+    <script>
+            function custom() {
+                window.open('https://scratch.mit.edu/accounts/login/');
+                document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
+                localStorage.setItem('signedIn', 'true');
+            }
+
+        function checkSignedIn() {
+        var signedIn = localStorage.getItem('signedIn');
+            if(signedIn == "true"){
+                document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
+            }
+        }
+        
+        checkSignedIn();
+    </script>
 <br>
 <br>
       <iframe allowtransparency="true" width="970" height="803" src="https://scratch.mit.edu/projects/embed/155893179/?autostart=false" frameborder="0" allowfullscreen></iframe>
