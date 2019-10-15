@@ -49,7 +49,6 @@
         <br>
         <br>
     </div>
-    <!--HERERERERERERERERERERERERERERERERE-->
     
     <h2>Salmon Says</h2>
     <div id="signin">
@@ -59,11 +58,11 @@
             function custom() {
                 window.open('https://scratch.mit.edu/accounts/login/');
                 document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
-                sessionStorage.setItem('signedIn', 'true');
+                localStorage.setItem('signedIn', 'true');
             }
 
         function checkSignedIn() {
-        var signedIn = sessionStorage.getItem('signedIn');
+        var signedIn = localStorage.getItem('signedIn');
             if(signedIn == "true"){
                 document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
             }
