@@ -61,14 +61,15 @@
                 document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
                 sessionStorage.setItem('signedIn', 'true');
             }
-        </script>
-    <script>
+
         function checkSignedIn() {
         var signedIn = sessionStorage.getItem('signedIn');
             if(signedIn == "true"){
                 document.getElementById("signin").innerHTML = "You've signed in to Scratch!"
             }
         }
+        
+        checkSignedIn();
     </script>
         <br>
     <br>
