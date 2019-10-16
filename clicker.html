@@ -18,6 +18,7 @@
     </script>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="cookieconsent.js"></script>
 
     <!--
     ____  ____  ____________   ______                _            
@@ -74,3 +75,9 @@
         <button id="password" onclick='window.alert("Keep this code to load from: " + x.toString(16));'>Save</button>
         <button onclick='var pass = prompt("Enter save code:"); x = parseInt(pass, 16); window.alert("click the [ok] to complete recovery of "+x+" clicks."); document.getElementById("clicker").innerText = x;'>Load</button>
         <button ondblclick='window.alert("Game reset!"); x = -1; clicky();'>Reset (Double click)</button>
+    </body>
+    <div id="myCookieConsent">
+        <a id="cookieButton">Understood</a>
+        <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="privacypolicy.html">More&nbsp;details</a></div>
+    </div>
+</html>

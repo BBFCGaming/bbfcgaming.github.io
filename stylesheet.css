@@ -107,51 +107,48 @@ background-color: black;
 }
 
 /*Cookie Consent*/
-#cookieConsent {
-    background-color: rgba(20,20,20,0.9);
-    min-height: 26px;
-    font-size: 14px;
-    color: #ccc;
-    line-height: 26px;
-    padding: 8px 0 8px 30px;
-    font-family: "Trebuchet MS",Helvetica,sans-serif;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    z-index: 9999;
+#myCookieConsent {
+  z-index: 999;
+  min-height: 20px;
+  font-family: OpenSans, arial, "sans-serif";
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.6);
+  overflow: hidden;
+  position: fixed;
+  color: #FFF;
+  bottom: 0px;
+  right: 10px;
+  display: none;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
-
-#cookieConsent a {
-    color: #4B8EE7;
-    text-decoration: none;
+#myCookieConsent div {
+  padding: 5px 0 0;
 }
-
-#closeCookieConsent {
-    float: right;
-    display: inline-block;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: -15px 0 0 0;
-    font-weight: bold;
+#myCookieConsent a {
+  color: #ffba55;
+  display: inline-block;
+  padding: 0 10px;
 }
-#closeCookieConsent:hover {
-    color: #FFF;
+#myCookieConsent a:hover {
+color: #fda016;
 }
-#cookieConsent a.cookieConsentOK {
-    background-color: #F1D600;
-    color: #000;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 0 20px;
-    cursor: pointer;
-    float: right;
-    margin: 0 60px 0 10px;
+#myCookieConsent a#cookieButton {
+  display: inline-block;
+  color: #000000;
+  font-size: 1.1em;
+background: #ffba55;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px 20px;
+  float: right;
+  border-radius: 20px;
 }
-#cookieConsent a.cookieConsentOK:hover {
-    background-color: #E0C91F;
+#myCookieConsent a#cookieButton:hover {
+  background: #fda016;
+color: #000;
 }
 /*Cookie Consent End*/
 
