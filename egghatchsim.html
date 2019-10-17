@@ -18,26 +18,24 @@
        
        <head>
 <title>Pokémon Egg Hatching Sim - BBFC Gaming</title>
-<style>
-body {
-background-color: black;
-color: red;
-font-family: monospace
-}
-hr {
-color: red;
-background-color:red;
-}
-button {
-background-color: blue;
-color: white;
-}
-</style>
+<link rel = "stylesheet"
+          type = "text/css"
+          href = "stylesheet.css" />
 <script type="text/javascript" src="cookieconsent.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
        <embed style="height:50px; width:100%; " src="banner.html">
 <div id="title" href="https://bbfcgaming.github.io">
 <div style="border:5px solid red; text-align:center;"><h1>BBFC Gaming</h1></div>
+<!--Buttons-->
+<div id="buttons">
+       Loading buttons... <a href="nojs.html" class="buttons-link">No JavaScript?</a>
+   </div>
+   <script>
+       $(function(){
+           $("#buttons").load("buttons.html");
+       });
+   </script>
 <hr>
 <br>
 <br>
