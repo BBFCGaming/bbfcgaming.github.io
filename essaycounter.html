@@ -137,20 +137,20 @@
     <script>
 
 
-    function WordCount(str) {
-  var totalSoFar = 0;
-  for (var i = 0; i < WordCount.length; i++)
-    if (str[i] === " ") { // if a space is found in str
-      totalSoFar = +1; // add 1 to total so far
-  }
-  totalsoFar += 1; // add 1 to totalsoFar to account for extra space since 1 space = 2 words
+    function WordCount() {
+        s = document.getElementById("userInput2").value;
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+	var userInput2 = s.split(' ').length;
 }
 
 function calculatePercent(soFar, fullAmount) {
+    var percent = 0;
     var userInput = document.getElementById("userInput").value;
-    var userInput2 = document.getElementById("userInput2").value;
-    WordCount(userInput2);
-    var percent = totalSoFar/userInput;
+    WordCount();
+    percent = userInput/userInput2;
+    percent = percent * 100;
     document.getElementById("results").innerHTML = percent + "%";
 }
 
