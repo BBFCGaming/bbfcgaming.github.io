@@ -138,11 +138,8 @@
 
 
     function WordCount() {
-        s = document.getElementById("userInput2").value;
-	s = s.replace(/(^\s*)|(\s*$)/gi,"");
-	s = s.replace(/[ ]{2,}/gi," ");
-	s = s.replace(/\n /,"\n");
-	var userInput2 = s.split(' ').length;
+        var wordcounter = document.getElementById('userInput2')
+	var userInput2 = (wordcounter.value == '')? 0 : wordcounter.value.split(' ').length
 }
 
 function calculatePercent(soFar, fullAmount) {
