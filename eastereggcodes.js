@@ -208,9 +208,6 @@ var pass;
         if (pass == "Am I the meat manager?"){
             window.open("https://meat-manager-checker.turbowafflz.repl.run");
         }
-        if (pass == "Count My Essay"){
-            window.open("essaycounter.html");
-        }
     }
 
   
