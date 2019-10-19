@@ -107,7 +107,7 @@
 
         function switchTheme(e) {
                     if (e.target.checked) {
-                        var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+                        var r = confirm("Are you sure you want to switch on light mode? (It won't work if you have a dark mode extension installed)");
                         if(r == true) {
                             document.documentElement.setAttribute('data-theme', 'light');
                             localStorage.setItem('theme', 'light'); //add this
