@@ -227,6 +227,19 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
           document.cookie="saveBannerClosed=here; expires="+expire+";path=/";
                  $('#savebanner').toggle();
             }
+            
+            function testBanner(){
+      var offset = new Date().getTimezoneOffset();
+      if ((offset >= -180) && (offset <= 240)) { //Europe and America
+          var visit=GetCookie("saveBannerClosed");
+          if (visit==null){
+             
+         } else {
+              $('#savebanner').toggle();
+         }		
+      }
+  }
+            testBanner();
         </script>
             <!-- Clippy.js -->
             <script src="clippy.js"></script>
