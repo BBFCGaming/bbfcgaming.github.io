@@ -93,7 +93,7 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
             <!--<center><embed style="height:60px;" src="version.html"></center>-->
             <center><iframe id="version" src="version.html" height="55px" frameBorder="0"></iframe></center>
 
-            <center><div id="savebanner" style="border:5px solid red; width:60%;"><img src='image/savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")' width="100%"><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
+            <center><div id="savebanner" style="border:5px solid red; width:60%;"><img src='image/savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")' width="100%"><br><button style="background-color:red; color:white" onclick="denySaveBanner()">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
 
             <hr>
             <!--Buttons-->
@@ -220,6 +220,14 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 
                 toggleSwitch.addEventListener('change', switchTheme, false);
             </script>
+        <script>
+            function denySaveBanner() {
+                var expire=new Date();
+          expire=new Date(expire.getTime()+7776000000);
+          document.cookie="saveBannerClosed=here; expires="+expire+";path=/";
+                 $('#savebanner').toggle();
+            }
+        </script>
             <!-- Clippy.js -->
             <script src="clippy.js"></script>
 
