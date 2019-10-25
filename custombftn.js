@@ -70,4 +70,4 @@
      */
     always_show_widget: true // @type {boolean}
   };
-src="https://widget.battleforthenet.com/widget.js" async
+  $.getScript('https://widget.battleforthenet.com/widget.js');
