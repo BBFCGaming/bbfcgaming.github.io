@@ -1,4 +1,3 @@
-<script type="text/javascript">
   var _bftn_options = {
     /*
      * Choose from 'take-action', 'capitol', 'onemorevote', 'countdown', 'glitch', 'money', 'stop', 'slow', 'without'.
@@ -71,5 +70,4 @@
      */
     always_show_widget: true // @type {boolean}
   };
-</script>
-<script src="https://widget.battleforthenet.com/widget.js" async></script>
+src="https://widget.battleforthenet.com/widget.js" async
