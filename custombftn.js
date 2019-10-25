@@ -52,6 +52,6 @@
     /*
      * Always show the widget. Useful for testing.
      */
-    always_show_widget: true // @type {boolean}
+    always_show_widget: false // @type {boolean}
   };
   $.getScript('https://widget.battleforthenet.com/widget.js');
