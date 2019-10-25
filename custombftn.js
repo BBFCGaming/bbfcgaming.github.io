@@ -1,20 +1,4 @@
   var _bftn_options = {
-    /*
-     * Choose from 'take-action', 'capitol', 'onemorevote', 'countdown', 'glitch', 'money', 'stop', 'slow', 'without'.
-     * Default is 'take-action'.
-     */
-    theme: 'onemorevote', // @type {string}
-    
-    /*
-     * Or, if you want your own custom theme, specify its properties here.
-     * Unspecified options will fall back to the default values.
-     */
-    theme: {
-      className: 'money', // @type {string} will be applied to iframe body tag
-      logos: ['images/money.png', 'images/stop.png'], // @type {Array} img src values
-      headline: 'Your headline here.', // @type {string} modal headline text
-      body: 'Your body here.' // @type {string} modal body text
-    },
     
     /*
      * Choose from 'fp' for Free Press, 'dp' for Demand Progress or
