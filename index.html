@@ -222,7 +222,7 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
                 var expire=new Date();
           expire=new Date(expire.getTime()+604800000);
           document.cookie="saveBannerClosed=here; expires="+expire+";path=/";
-                 $('#savebanner').toggle();
+                 $('#savebanner').hide();
             }
             
             function testBanner(){
@@ -232,7 +232,7 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
           if (visit==null){
              
          } else {
-              $('#savebanner').toggle();
+              $('#savebanner').hide();
          }		
       }
   }
