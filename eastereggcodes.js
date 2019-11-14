@@ -23,7 +23,7 @@ var pass;
             }
         }
         if (pass == "cheese" ) {
-            window.location.replace("cheese.png");
+            window.location.replace("image/cheese.png");
         }
         if (pass == "42") {
             window.alert("Correct!");
