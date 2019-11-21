@@ -38,13 +38,32 @@
              color: black;
                 background-color: red;
             }
+            #closeBanner {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
         </style>
     </head>
     <body>
 
-        <div id="banner" class="banner" style="border:2px dotted orange; width:100%; "><center>Check out our <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ" class="bannerlink" target="_blank">Youtube</a> Channel! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Help reinstate Net Neutrality! Visit <a href="https://www.battleforthenet.com/" class="bannerlink" target="_blank">https://www.battleforthenet.com/</a>!!</center></div>
+        <div id="banner" class="banner" style="border:2px dotted orange; width:100%; "><div id="closeBanner">x</div><center>Check out our <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ" class="bannerlink" target="_blank">Youtube</a> Channel! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Help reinstate Net Neutrality! Visit <a href="https://www.battleforthenet.com/" class="bannerlink" target="_blank">https://www.battleforthenet.com/</a>!!</center></div>
 
             </body>   
+    <script>
+        $(document).ready(function(){   
+    setTimeout(function () {
+        $("#banner").show();
+     }, 4000);
+    $("#closeBanner").click(function() {
+        $("#banner").hide();
+    }); 
+}); 
+    </script>
             <script>
 
                 window.dataLayer = window.dataLayer || [];
