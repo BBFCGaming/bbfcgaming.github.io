@@ -72,9 +72,7 @@
 
                     document.getElementById('banner').style.color = textColor;
                     document.getElementById('banner').style.backgroundColor = backgroundColor; 
-                       if (x == 1){
-            $("#banner").hide();
-        }
+                      
                 }
 
 
@@ -82,17 +80,12 @@
 
             </script>
     <script>
-        x = 0;
-        if (x == 1){
-            $("#banner").hide();
-        }
         $(document).ready(function(){   
     setTimeout(function () {
         $("#banner").show();
-     }, 4000);
+     }, 1000);
     $("#closeBanner").click(function() {
         $("#banner").hide();
-        x = 1;
     }); 
 }); 
     </script>
