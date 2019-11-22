@@ -22,6 +22,15 @@ function GetCookie(name) {
               // Already accepted
          }		
       }
+      var offset = new Date().getTimezoneOffset();
+      if ((offset >= -180) && (offset <= 240)) { //Europe and America
+          var visit=GetCookie("saveBannerClosed");
+          if (visit==null){
+             $("#savebanner").show();	// Show banner
+         } else {
+              $("#savebanner").hide(); //hidden
+         }		
+      }
   }
   $(document).ready(function(){
       $("#cookieButton").click(function(){
@@ -30,6 +39,13 @@ function GetCookie(name) {
           expire=new Date(expire.getTime()+7776000000);
           document.cookie="cookieCompliancyAccepted=here; expires="+expire+";path=/";
           $("#myCookieConsent").hide(800);
+      });
+      $("#denySaveBanner").click(function(){
+          console.log('Save Banner Closed');
+          var expire=new Date();
+          expire=new Date(expire.getTime()+604800000);
+          document.cookie="saveBannerClosed=here; expires="+expire+";path=/";
+          $("#savebanner").hide();
       });
       testFirstCookie();
   });
