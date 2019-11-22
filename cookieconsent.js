@@ -25,9 +25,12 @@ function GetCookie(name) {
       var offset = new Date().getTimezoneOffset();
       if ((offset >= -180) && (offset <= 240)) { //Europe and America
           var visit=GetCookie("saveBannerClosed");
+          console.log(visit);
           if (visit==null){
+              console.log("show");
              $("#savebanner").show();	// Show banner
          } else {
+             console.log("hide");
               $("#savebanner").hide(); //hidden
          }		
       }
