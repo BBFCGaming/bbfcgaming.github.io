@@ -85,6 +85,14 @@
         $("#banner").show();
      }, 1000);
     $("#closeBanner").click(function() {
+        
+        function denySaveBanner() {
+                var expire=new Date();
+          expire=new Date(expire.getTime()+604800000);
+          document.cookie="bannerClosed=here; expires="+expire+";path=/";
+                 $('#savebanner').hide();
+            }
+        
         $("#banner").hide();
     }); 
 }); 
