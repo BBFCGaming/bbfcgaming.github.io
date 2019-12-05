@@ -3,6 +3,7 @@
 <script>
   // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
   //window.location.replace("https://bbfcgaming.github.io/development.html")
+  //Whenever you make a change, create a new release marking the version up 0.0.1 more
   </script>
 <head>
   <script src="https://widget.battleforthenet.com/widget.js" async></script>
@@ -21,6 +22,12 @@ button {
 background-color: blue;
 color: white;
 }
+#snapshot-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
 </style>
 </head>
   <body>
@@ -28,7 +35,7 @@ color: white;
 <div id="title">
 <div style="border:5px solid red; text-align:center;" href="https://bbfcgaming.github.io"><h1>BBFC Gaming</h1></div>
 <hr>
-  <button onclick='window.open("games.html")'>Games</button><button onclick='window.open("people.html")'>People</button><button onclick='window.open("reveiwform.html")'>Questions or Comments?</button>
+  <button onclick='window.open("games.html")'>Games</button><button onclick='window.open("people.html")'>People</button><button onclick='window.open("reviewform.html")'>Questions or Comments?</button>
   <br>
 <br>
 </div>
@@ -41,15 +48,17 @@ color: white;
 Featured Game:
 <hr>
 <div style="border: 2px solid orange;">
-<h3>Ninja Parkor</h3>
+<h3>Ninja Parkour</h3>
 <br>
 Be a ninja box as you jump through many exiting levels!
 <br>
 <br>
-<button onclick='window.open("ninjaparkor.html")'>PLAY!</button>
+<button onclick='window.open("ninjaparkour.html")'>PLAY!</button>
 </div>
 <br>
 <br> 
-
+  <div id="snapshot-date">
+    Snapshot Date: Dec. 14, 2017
+  </div>
   </body>
 </html>
