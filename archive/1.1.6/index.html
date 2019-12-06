@@ -36,6 +36,43 @@ color: white;
   left: 0;
   color: white;
 }
+#overlayedbox {
+  font-family: OpenSans, arial, "sans-serif";
+  background: rgba(50,50,50,0.6);
+  border-radius: 25px;
+  padding: 20px;
+  width: 200;
+  height: 15px;
+  text-align: center;
+  verticle-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  #arrow-left{
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white; 
+  position: absolute;
+}
+
+#arrow-right{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  float: right;
+  }
+ #arrow-right:hover{
+      border-left: 10px solid gray;
+  }
+  #arrow-left:hover{
+      border-right: 10px solid gray;
+  }
+
 </style>
 </head>
   <body>
@@ -69,7 +106,22 @@ Be a ninja box as you jump through many exiting levels!
 <br>
 <br> 
   <div id="snapshot-date">
-    Snapshot Date: Dec. 15, 2017
+    Snapshot Date: Dec. 16, 2017
+  </div>
+<div id="arrow-left"></div> 1.1.6 
+    <div id="arrow-right"></div> 
+   </div> 
   </div>
   </body>
+<script>
+document.getElementById("arrow-left").addEventListener("click", myFunction, false);
+     function myFunction(){
+       window.location.replace("http://bbfcgaming.github.io/archive/1.2.6/index.html");
+     }
+document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
+     function myFunctionTwo(){
+       window.location.replace("http://bbfcgaming.github.io/archive/1.0.5/index.html");
+     }
+     </script>
+
 </html>
