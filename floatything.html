@@ -112,8 +112,7 @@ if (request.status === 404) {
     break;
 }
    }
-   console.log(buffer3);
-   
+
    //VERSION UP
    num = array[4];
    buffer = num[0];
@@ -137,7 +136,7 @@ if (request.status === 404) {
      document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
      document.getElementById("arrow-left").addEventListener("click", myFunction, false);
      function myFunction(){
-       window.location.replace("http://bbfcgaming.github.io/archive/1.0.5/index.html");
+       window.location.href = ("http://bbfcgaming.github.io/archive/1.0.5/index.html");
      }
    }else {
      //normal
@@ -145,11 +144,11 @@ if (request.status === 404) {
    forward = str.concat("https://bbfcgaming.github.io/archive/", buffer4, "/index.html");
 document.getElementById("arrow-left").addEventListener("click", myFunction, false);
      function myFunction(){
-       window.location.replace(forward);
+       window.location.href = forward;
      }
 document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
      function myFunctionTwo(){
-       window.location.replace(back);
+       window.location.href = back;
      }
      }
      </script> 
