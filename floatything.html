@@ -10,7 +10,7 @@
 #overlayedbox {
   display: flex;
   font-family: OpenSans, arial, "sans-serif";
-  background: rgba(50,50,50,0.6);
+  background: rgba(25,25,25,0.6);
   border-radius: 25px;
   padding: 20px;
   width: 200;
@@ -20,6 +20,7 @@
   margin-right: auto;
   justify-content: space-between;
   align-items: center;
+    color: white;
   }
   
   #arrow-left{
@@ -58,7 +59,8 @@
    </div> 
    <div id="arrow-right"></div> 
    <script>
-   url = window.location.href;
+     //setup
+   url = "https://bbfcgaming.github.io/archive/1.0.5/index.html"//window.location.href;
    array = url.split("/");
    document.getElementById("pv").innerHTML = array[4];
    num = array[4];
@@ -78,8 +80,39 @@
        num1 = num1 - 1;
        num2 = 9;
    }
+   //make new num into str
    str = ""
    buffer3 = str.concat(num1, ".", num2, ".", num3);
+   testing = false;
+   while(testing == false) {
+   var request;
+if(window.XMLHttpRequest)
+    request = new XMLHttpRequest();
+else
+    request = new ActiveXObject("Microsoft.XMLHTTP");
+request.open('GET', str.concat("https://bbfcgaming.github.io/archive/", buffer3, "/index.html"), false);
+request.send(); // there will be a 'pause' here until the response to come.
+// the object request will be actually modified
+if (request.status === 404) {
+    num3--;
+    if(num3 < 0){
+     num2--;
+       num3 = 9;
+   }
+   if(num2 < 0){
+       num1--;
+       num2 = 9;
+   }
+   //make new num into str
+   str = ""
+   buffer3 = str.concat(num1, ".", num2, ".", num3);
+}else{
+    testing = true;
+    buffer3 = str.concat(num1, ".", num2, ".", num3);
+}
+   }
+   console.log(buffer3);
+   
    //VERSION UP
    num = array[4];
    buffer = num[0];
@@ -96,6 +129,7 @@
      num2 = 0;
      num1 = buffer*1 + 1;
    }
+   //Make new num into str
    buffer4 = str.concat(num1, ".", num2, ".", num3);
    //Test if too low
    if(buffer3 == "0.9.9"){
