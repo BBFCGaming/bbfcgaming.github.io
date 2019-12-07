@@ -140,8 +140,37 @@ if (request.status === 404) {
      }
    }else {
      //normal
+       testing = false;
+   while(testing == false) {
+       var request;
+if(window.XMLHttpRequest)
+    request = new XMLHttpRequest();
+else
+    request = new ActiveXObject("Microsoft.XMLHTTP");
+request.open('GET', str.concat("https://bbfcgaming.github.io/archive/", buffer4, "/index.html"), false);
+request.send(); // there will be a 'pause' here until the response to come.
+// the object request will be actually modified
+if (request.status === 404) {
+    num3 = buffer2*1 + 1;
+   if(num3 > 9){
+     num2 = buffer1*1 + 1;
+     num3 = 0;
+   }
+   if(num2 > 9){
+     num2 = 0;
+     num1 = buffer*1 + 1;
+   }
+   //Make new num into str
+   buffer4 = str.concat(num1, ".", num2, ".", num3);
+}else{
+    testing = true;
+    buffer4 = str.concat(num1, ".", num2, ".", num3);
+    break;
+}
+   }
    back = str.concat("https://bbfcgaming.github.io/archive/", buffer3, "/index.html");
    forward = str.concat("https://bbfcgaming.github.io/archive/", buffer4, "/index.html");
+       //click detection
 document.getElementById("arrow-left").addEventListener("click", myFunction, false);
      function myFunction(){
        window.location.href = forward;
