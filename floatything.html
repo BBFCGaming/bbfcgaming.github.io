@@ -131,14 +131,6 @@ if (request.status === 404) {
    }
    //Make new num into str
    buffer4 = str.concat(num1, ".", num2, ".", num3);
-   //Test if too low
-   if(buffer3 == "0.9.9"){
-     document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
-     document.getElementById("arrow-left").addEventListener("click", myFunction, false);
-     function myFunction(){
-       window.location.href = ("http://bbfcgaming.github.io/archive/1.0.5/index.html");
-     }
-   }else {
      //normal
        testing = false;
    while(testing == false) {
@@ -167,7 +159,15 @@ if (request.status === 404) {
     buffer4 = str.concat(num1, ".", num2, ".", num3);
     break;
 }
-   }
+   //Test if too low
+   if(buffer3 == "0.9.9"){
+     document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
+     document.getElementById("arrow-left").addEventListener("click", myFunction, false);
+     function myFunction(){
+       window.location.href = ("http://bbfcgaming.github.io/archive/1.0.5/index.html");
+     }
+   }else {
+       
    back = str.concat("https://bbfcgaming.github.io/archive/", buffer3, "/index.html");
    forward = str.concat("https://bbfcgaming.github.io/archive/", buffer4, "/index.html");
        //click detection
@@ -180,6 +180,7 @@ document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, 
        window.location.href = back;
      }
      }
+   }
      </script> 
   </div> 
  </body>
