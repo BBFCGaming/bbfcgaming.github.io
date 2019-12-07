@@ -2,64 +2,66 @@
 <html>
 
     <!--
-    ____  ____  ____________   ______                _            
-   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
-  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
- / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+____  ____  ____________   ______                _
+/ __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+/ __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+/ /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ /
 /_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
-                                                         /____/   
+/____/
 -->
 
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript" src="cookieconsent.js"></script>
+        <script type="text/javascript" src="/cookieconsent.js"></script>
         <title>Whoops!</title>
         <link rel = "stylesheet"
-          type = "text/css"
-          href = "/stylesheet.css" />
+              type = "text/css"
+              href = "/stylesheet.css" />
     </head>
     <body>
         <embed style="height:50px; width:100%; " src="/banner.html">
         <div id="title">
             <div style="border:5px solid red; text-align:center;" href="https://bbfcgaming.github.io"><h1>BBFC Gaming</h1></div>
-            <hr>
-            <!--Buttons-->
-            <div id="buttons">
-                <a href="nojs.html" class="buttons-link">No JavaScript?</a>
-            </div>
-            <script>
-                $(function(){
-                    $("#buttons").load("buttons.html");
-                });
-            </script>
-            <script>
+        </div>
+        <hr>
+        <!--Buttons-->
+        <div id="buttons">
+            <a href="/nojs.html" class="buttons-link">No JavaScript?</a>
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("/buttons.html");
+            });
+        </script>
+        <script>
             var x;
             var x = 404;
             function clicky() {
                 x = x-1;
                 document.getElementById("404").innerHTML = x;
                 if(x <= 0) {
-                x = 0;
-			document.getElementById("404").innerHTML = '<a href="https://forms.gle/CBxmCd97te1zgd3H7" target="_blank">https://forms.gle/CBxmCd97te1zgd3H7</a><br><p>List of People who have completed this game: <a href="https://docs.google.com/spreadsheets/d/1BvXmsR3BTgDJJl8t5SV50FU7r1C4pU1q-4loAIE4pjk/edit?usp=sharing" target="_blank">Here</a>'
-}
+                    x = 0;
+                    document.getElementById("404").innerHTML = '<a href="https://forms.gle/CBxmCd97te1zgd3H7" target="_blank">https://forms.gle/CBxmCd97te1zgd3H7</a><br><p>List of People who have completed this game: <a href="https://docs.google.com/spreadsheets/d/1BvXmsR3BTgDJJl8t5SV50FU7r1C4pU1q-4loAIE4pjk/edit?usp=sharing" target="_blank">Here</a>'
+                }
             }
         </script>
-            <br>
-            <br>
-            <div id="404" style="text-align: center; font-weight:bold; font-size: 26px;">
+        <br>
+        <br>
+        <div id="404" style="text-align: center; font-weight:bold; font-size: 26px;">
             404
+        </div>
+        <center><h2>That page isn't real...</h2></center>
+        <h3><center>Whatever you wanted, it's not here. It may have been moved, deleted, or just never existed. Is this a new page? If so, it may not have been built yet. More information about this error can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404">here</a>.</center></h3>
+        <h5><center>There's a secret game on this page! Try to find it!</center></h5>
+        <center>
+
+            <div>
+                <img src="https://bbfcgaming.github.io/image/Carpetbagger.png" width="500" height="275" onclick="clicky();" />
             </div>
-            <center><h2>That page isn't real...</h2></center>
-            <h3><center>Whatever you wanted, it's not here. It may have been moved, deleted, or just never existed. Is this a new page? If so, the server may not have it yet as changes take about 30 seconds to apply. More information about this error can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404">here</a>.</center></h3>
-		<h5><center>There's a secret game on this page! Try to find it!</center></h5>
-            <center>
-         
-         <div> 
-    <img src="https://bbfcgaming.github.io/image/Carpetbagger.png" width="500" height="275" onclick="clicky();" />
-</div>
-            </center>
-            <div id="myCookieConsent">
-                <a id="cookieButton">Understood</a>
-                <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="privacypolicy.html">More&nbsp;details</a></div>
-            </div>
-            </html>
+        </center>
+        <div id="myCookieConsent">
+            <a id="cookieButton">Understood</a>
+            <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="/privacypolicy.html">More&nbsp;details</a></div>
+        </div>
+    </body>
+</html>
