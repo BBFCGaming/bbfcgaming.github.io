@@ -63,6 +63,7 @@ hr {
 button {
     background-color: var(--button-bg);
     color: var(--button-test);
+    border: 0px;
 }
 
 /*Slider Button Start*/

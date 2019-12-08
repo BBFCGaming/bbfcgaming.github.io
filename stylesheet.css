@@ -11,6 +11,31 @@
     --privacy-link-hover: #828282;
     --new-games-div: red;
 }
+#archivedPage {
+
+    overflow: hidden;
+    position: absolute;
+    height:100%;
+
+}
+#pageContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    border: 0px;
+
+}
+
+
+#archivedSite iframe {
+    border: 0px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 [data-theme="light"] {
     --primary-color: white;
@@ -29,186 +54,142 @@
 
 
 body {
-background-color: var(--primary-color);
-color: var(--color);
-font-family: monospace
+    background-color: var(--primary-color);
+    color: var(--color);
+    font-family: monospace
 }
 hr {
-color: var(--hr);
-background-color: var(--hr-bg);
+    color: var(--hr);
+    background-color: var(--hr-bg);
 }
 button {
-background-color: var(--button-bg);
-color: var(--button-test);
+    background-color: var(--button-bg);
+    color: var(--button-test);
+    border: 1px solid var(--hr);
 }
 
 /*Slider Button Start*/
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+    em {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
 }
 .theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
 }
 
 .theme-switch input {
-  display:none;
+    display:none;
 }
 
 .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
 }
 
 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
 }
 
 input:checked + .slider {
-  background-color: black;
+    background-color: black;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 /*Slider Button End*/
 
 #savebanner {
-background-color: black;
+    background-color: black;
 }
 
 /*Cookie Consent*/
 #myCookieConsent {
-  z-index: 999;
-  min-height: 20px;
-  font-family: OpenSans, arial, "sans-serif";
-  padding: 10px 20px;
-  background: rgba(0,0,0,0.6);
-  overflow: hidden;
-  position: fixed;
-  color: #FFF;
-  bottom: 0px;
-  right: 10px;
-  display: none;
-  left: 0;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
+    z-index: 999;
+    min-height: 20px;
+    font-family: OpenSans, arial, "sans-serif";
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: fixed;
+    color: #FFF;
+    bottom: 0px;
+    right: 10px;
+    display: none;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
 }
 #myCookieConsent div {
-  padding: 5px 0 0;
+    padding: 5px 0 0;
 }
 #myCookieConsent a {
-  color: #ffba55;
-  display: inline-block;
-  padding: 0 10px;
+    color: #ffba55;
+    display: inline-block;
+    padding: 0 10px;
 }
 #myCookieConsent a:hover {
-color: #fda016;
+    color: #fda016;
 }
 #myCookieConsent a#cookieButton {
-  display: inline-block;
-  color: #000000;
-  font-size: 1.1em;
-background: #ffba55;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 2px 20px;
-  float: right;
-  border-radius: 20px;
+    display: inline-block;
+    color: #000000;
+    font-size: 1.1em;
+    background: #ffba55;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 20px;
 }
 #myCookieConsent a#cookieButton:hover {
-  background: #fda016;
-color: #000;
+    background: #fda016;
+    color: #000;
 }
 /*Cookie Consent End*/
 
 .bannerlink { color: white; }
 .bannerlink:visited { color: white; }
 .banner {
-  background-color: red;
-  color: black;
+    background-color: red;
+    color: black;
 }
 
 .pewdiepie-color-box {
-  background-color: white;
-  width: 250px;
-  height: 200px;
+    background-color: white;
+    width: 250px;
+    height: 200px;
 }
-
-#snapshot-date {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-}
-#overlayedbox {
-  display: flex;
-  font-family: OpenSans, arial, "sans-serif";
-  background: rgba(25,25,25,0.6);
-  border-radius: 25px;
-  padding: 20px;
-  width: 200;
-  height: 15px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  align-items: center;
-    color: white;
-  }
-  
-  #arrow-left{
-  width: 0; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid white; 
-}
-
-#arrow-right{
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid white;
-  //float: right;
-  }
- #arrow-right:hover{
-      border-left: 10px solid gray;
-  }
-  #arrow-left:hover{
-      border-right: 10px solid gray;
-  }
 
 .privacy-link {color: var(--privacy-link-root);}
 .privacy-link:visited {color: var(--privacy-link-root);}
@@ -219,4 +200,4 @@ color: #000;
 .buttons-link:visited {color: var(--privacy-link-root);}
 .buttons-link:hover {color: var(--privacy-link-hover);}
 .buttons-link:active {color: var(--privacy-link-root);}
-    
+
