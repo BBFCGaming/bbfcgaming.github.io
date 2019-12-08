@@ -1,8 +1,8 @@
 //setup
-   url = window.location.href;
-   array = url.split("/");
+   url = document.getElementById('archivedPage').src;
+    array = url.split("/");
 
-   num = array[4];
+   num = array[0];
    buffer = num[0];
    buffer1 = num[2];
    buffer2 = num[4];
@@ -53,7 +53,7 @@ if (request.status === 404) {
    }
 
    //VERSION UP
-   num = array[4];
+   num = array[0];
    buffer = num[0];
    buffer1 = num[2];
    buffer2 = num[4];
@@ -114,7 +114,7 @@ if (request.status === 404) {
      document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
      document.getElementById("arrow-left").addEventListener("click", myFunction, false);
      function myFunction(){
-       window.location.href = ("/archive/1.0.5/index.html");
+       document.getElementById('archivedPage').src = "/archive/1.0.5/index.html";
      }
    }else {
        
@@ -123,10 +123,10 @@ if (request.status === 404) {
        //click detection
 document.getElementById("arrow-left").addEventListener("click", myFunction, false);
      function myFunction(){
-       window.location.href = forward;
+       document.getElementById('archivedPage').src = forward;
      }
 document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
      function myFunctionTwo(){
-       window.location.href = back;
+       document.getElementById('archivedPage').src = back;
      }
      }
