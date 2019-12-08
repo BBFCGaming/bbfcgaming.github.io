@@ -28,15 +28,6 @@
 }
 
 
-#archivedSite iframe {
-    border: 0px;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
 [data-theme="light"] {
     --primary-color: white;
     --color: black;
