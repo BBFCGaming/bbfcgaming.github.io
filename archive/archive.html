@@ -22,7 +22,7 @@
         <!-- Global site tag (gtag.js) - Google Analytics (DON'T CHANGE THIS!!!) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
         <script type="text/javascript" src="cookieconsent.js"></script>
-        <script src="/archive/floatything.js"></script>
+        <!--<script src="/archive/floatything.js"></script>-->
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -58,8 +58,10 @@
     <!--Embed Game Here-->
 <br>
     <!--Archived page-->
-    <iframe id="archivedSite" src="1.0.5/index.html" width="100%" frameBorder="0">
-
+    <div id="pageContainer">
+    <iframe id="archivedPage" src="1.0.5/index.html" width="100%" />
+        </div>
+ <script> $('#archivedSite').css('height', $(window).height()+'px'); </script>
     <br>
   <div id="overlayedbox"> 
    <div id="arrow-left"></div> 
@@ -144,9 +146,10 @@
         toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
 
-<script type="text/javascript"> function iframeLoaded() { var iFrameID = document.getElementById('archivedSite'); if(iFrameID) { iFrameID.height = ""; iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px"; } } </script> <iframe id="archivedSite" onload="iframeLoaded()" frameborder="0" src="/archive/1.0.5/index.html" height="100%" width="100%"></iframe>
+
     <div id="myCookieConsent">
         <a id="cookieButton">Understood</a>
         <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="/privacypolicy.html">More&nbsp;details</a></div>
     </div>
+        </body>
 </html>
