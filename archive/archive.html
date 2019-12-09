@@ -49,9 +49,9 @@
 <h2>Site Archive</h2>
     <!--Archived page-->
     <div id="pageContainer">
-    <iframe id="archivedPage" src="1.0.5/index.html" width="100%" />
+    <iframe id="archivedPage" src='1.0.5/index.html' width="100%" />
         </div>
-    <br>
+    <br><!--
   <div id="overlayedbox"> 
    <div id="arrow-left"></div> 
    <div id="pv">
@@ -59,7 +59,11 @@
    </div> 
    <div id="arrow-right"></div> 
       
-    </div>
+    </div>-->
+        <center><div id="floatingthing">Loading Navigator...</div></center>
+      <script>
+                    $("#floatingthing").load("/floatything.html");
+                </script>
     <div id="snapshot-date">
     Snapshot Date: Dec. 15, 2017 
   </div>
