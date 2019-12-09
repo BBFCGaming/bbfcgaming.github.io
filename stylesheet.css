@@ -208,8 +208,9 @@ input:checked + .slider:before {
 }
 
 #overlayedbox {
+  display: flex;
   font-family: OpenSans, arial, "sans-serif";
-  background: rgba(50,50,50,0.6);
+  background: rgba(25,25,25,0.6);
   border-radius: 25px;
   padding: 20px;
   width: 200;
@@ -217,7 +218,9 @@ input:checked + .slider:before {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-    bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+    color: white;
   }
   
   #arrow-left{
@@ -226,24 +229,21 @@ input:checked + .slider:before {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid white; 
-  position: absolute;
 }
-
 #arrow-right{
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid white;
-  float: right;
+  //float: right;
   }
-  #arrow-right:hover{
-  	border-left: 10px solid gray;
+ #arrow-right:hover{
+      border-left: 10px solid gray;
   }
   #arrow-left:hover{
-  	border-right: 10px solid gray;
+      border-right: 10px solid gray;
   }
-
 .privacy-link {color: var(--privacy-link-root);}
 .privacy-link:visited {color: var(--privacy-link-root);}
 .privacy-link:hover {color: var(--privacy-link-hover);}
