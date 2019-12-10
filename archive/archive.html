@@ -149,11 +149,13 @@ if (request.status === 404) {
        //click detection
 document.getElementById("arrow-left").addEventListener("click", myFunction, false);
      function myFunction(){
-       document.getElementById('archivedPage').innerHTML = "<iframe id='archivedPage' src=str.concat(forward, '/index.html') width='100%' />";
+         forward = str.concat(forward, '/index.html');
+       document.getElementById('archivedPage').src = forward;
      }
 document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
      function myFunctionTwo(){
-       document.getElementById('archivedPage').innerHTML = "<iframe id='archivedPage' src=str.concat(back, '/index.html') width='100%' />";
+         back = str.concat(back, '/index.html');
+       document.getElementById('archivedPage').src = back;
      }
      }
         </script>
