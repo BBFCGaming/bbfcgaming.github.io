@@ -22,7 +22,67 @@
         <!-- Global site tag (gtag.js) - Google Analytics (DON'T CHANGE THIS!!!) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
         <script type="text/javascript" src="cookieconsent.js"></script>
-        <!--FLOATYTHING JAVASCRIPT-->
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129128356-2');
+        </script>
+
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "/stylesheet.css" />
+    </head>
+    <body>
+        <!--Buttons-->
+        <div id="buttons">
+            <a href="/nojs.html" class="buttons-link">No JavaScript?</a>
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("/buttons.html");
+            });
+        </script>
+    <!--Game Title-->
+<h2>Site Archive</h2>
+    <!--Archived page-->
+    <div id="pageContainer">
+    <iframe id="archivedPage" src='1.0.5/index.html' width="100%" />
+        </div>
+    <br><!--
+  <div id="overlayedbox"> 
+   <div id="arrow-left"></div> 
+   <div id="pv">
+     x.x.x
+   </div> 
+   <div id="arrow-right"></div> 
+      
+    </div>-->
+        <center><div id="floatingthing">Loading Navigator...</div></center>
+      <div id="overlayedbox"> 
+   <div id="arrow-left"></div> 
+   <div id="pv">
+     x.x.x
+   </div> 
+   <div id="arrow-right"></div> 
+    <div id="snapshot-date">
+    Snapshot Date: Dec. 15, 2017 
+  </div>
+    <br>
+    <br>
+       
+      <br>
+    <br>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        Enable Light Mode
+    </div>
+                  <!--FLOATYTHING JAVASCRIPT-->
         <script>
             //setup
    url = document.getElementById('archivedPage').src;
@@ -159,65 +219,6 @@ document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, 
      }
      }
         </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-129128356-2');
-        </script>
-
-        <link rel = "stylesheet"
-              type = "text/css"
-              href = "/stylesheet.css" />
-    </head>
-    <body>
-        <!--Buttons-->
-        <div id="buttons">
-            <a href="/nojs.html" class="buttons-link">No JavaScript?</a>
-        </div>
-        <script>
-            $(function(){
-                $("#buttons").load("/buttons.html");
-            });
-        </script>
-    <!--Game Title-->
-<h2>Site Archive</h2>
-    <!--Archived page-->
-    <div id="pageContainer">
-    <iframe id="archivedPage" src='1.0.5/index.html' width="100%" />
-        </div>
-    <br><!--
-  <div id="overlayedbox"> 
-   <div id="arrow-left"></div> 
-   <div id="pv">
-     x.x.x
-   </div> 
-   <div id="arrow-right"></div> 
-      
-    </div>-->
-        <center><div id="floatingthing">Loading Navigator...</div></center>
-      <div id="overlayedbox"> 
-   <div id="arrow-left"></div> 
-   <div id="pv">
-     x.x.x
-   </div> 
-   <div id="arrow-right"></div> 
-    <div id="snapshot-date">
-    Snapshot Date: Dec. 15, 2017 
-  </div>
-    <br>
-    <br>
-       
-      <br>
-    <br>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-        Enable Light Mode
-    </div>
     <script>
            document.getElementById("pv").innerHTML = array[4];
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
