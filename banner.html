@@ -78,19 +78,17 @@
                 checkBanner();
 
             </script>
-    <script>
-        $(document).ready(function(){   
+    <script>   
     var closed = localStorage.getItem('bannerclosed');
-            if(closed == true){
+            if(closed == 'here'){
                 $('#banner').hide();
             }else{
                 $('#banner').show();
             }
       }
      
-     }, 1000);
     $("#closeBanner").click(function() {
-                localStorage.setItem('bannerclosed', true);
+                localStorage.setItem('bannerclosed', 'here');
         $("#banner").hide();
     }); 
 }); 
