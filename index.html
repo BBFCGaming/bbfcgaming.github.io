@@ -217,19 +217,17 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 
                 toggleSwitch.addEventListener('change', switchTheme, false);
             </script>
-        <script>
-            $(document).ready(function(){   
+        <script>  
         var closed = localStorage.getItem('saveclosed');
-                if(closed==true){
+                if(closed=='here'){
                     $('#savebanner').hide();
                 }else{
                     $('#savebanner').show();
                 }
       }
-     
-     }, 1000);
+    
     $("#denySaveBanner").click(function() {
-                localStorage.setItem('saveclosed', true);
+                localStorage.setItem('saveclosed', 'here');
         $("#savebanner").hide();
     }); 
         </script>
