@@ -227,12 +227,11 @@ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
                 }
       }
      
-     });
+     }, 1000);
     $("#denySaveBanner").click(function() {
                 localStorage.setItem('saveclosed', true);
         $("#savebanner").hide();
     }); 
-}); 
         </script>
 
             <!-- Clippy.js -->
