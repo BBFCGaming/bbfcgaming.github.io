@@ -12,7 +12,6 @@
 -->
     <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="cookieconsent.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
@@ -81,22 +80,17 @@
             </script>
     <script>
         $(document).ready(function(){   
-    setTimeout(function () {
-      var offset = new Date().getTimezoneOffset();
-      if ((offset >= -180) && (offset <= 240)) { //Europe and America
-          var visit=GetCookie("bannerClosed");
-          if (visit==null){
-             $("#banner").show();
-         } else {
-              $('#banner').hide();
-         }		
+    var closed = localStorage.getItem('bannerclosed');
+            if(closed == true){
+                $('#banner').hide();
+            }else{
+                $('#banner').show();
+            }
       }
      
      }, 1000);
     $("#closeBanner").click(function() {
-                var expire=new Date();
-          expire=new Date(expire.getTime()+604800000);
-          document.cookie="bannerClosed=here; expires="+expire+";path=/";
+                localStorage.setItem('bannerclosed', true);
         $("#banner").hide();
     }); 
 }); 
