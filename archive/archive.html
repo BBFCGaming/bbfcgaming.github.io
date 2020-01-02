@@ -90,9 +90,10 @@ var ActiveXObject;
 var back;
 var forward;
  
-url = document.getElementById('archivedPage').src;
+url = "1.0.5/index.html"//document.getElementById('archivedPage').src;
 array = url.split("/");
- 
+document.getElementById("pv").innerHTML = array[0];
+       
 num = array[0];
 buffer = num[0];
 buffer1 = num[2];
@@ -120,7 +121,7 @@ while (testing === false) {
     request = new XMLHttpRequest();
   else
     request = new ActiveXObject("Microsoft.XMLHTTP");
-  request.open('GET', str.concat("https://bbfcgaming.github.io/archive/", buffer3, "/index.html"), false);
+  request.open('GET', str.concat("https://bbfcgaming.com/archive/", buffer3, "/index.html"), false);
   request.send(); // there will be a 'pause' here until the response to come.
   // the object request will be actually modified
   if (request.status === 404) {
@@ -173,7 +174,7 @@ while (testing === false) {
     request = new XMLHttpRequest();
   else
     request = new ActiveXObject("Microsoft.XMLHTTP");
-  request.open('GET', str.concat("https://bbfcgaming.github.io/archive/", buffer4, "/index.html"), false);
+  request.open('GET', str.concat("https://bbfcgaming.com/archive/", buffer4, "/index.html"), false);
   request.send(); // there will be a 'pause' here until the response to come.
   // the object request will be actually modified
   if (request.status === 404) {
@@ -201,7 +202,7 @@ while (testing === false) {
  
  
 //Test if too low
-if (buffer3 == "0.9.9") {
+if (array[0] == "1.0.0") {
   document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
   document.getElementById("arrow-left").addEventListener("click", myFunction, false);
  
@@ -228,7 +229,7 @@ if (buffer3 == "0.9.9") {
 }
         </script> 
    <script>
-           document.getElementById("pv").innerHTML = array[4];
+           
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
         function switchTheme(e) {
