@@ -43,7 +43,7 @@
   <h2>Site Archive</h2> 
   <!--Archived page--> 
   <div id="pageContainer"> 
-   <iframe id="archivedPage" src="1.0.5/index.html" width="100%"></iframe> 
+   <iframe id="archivedPage" src="/archive/1.0.5/index.html" width="100%"></iframe> 
   </div> 
   <br>
   <!--
@@ -199,7 +199,12 @@ while (testing === false) {
  
  
  
- 
+ var version;
+    var version2;
+    var versionArray;
+    version2 = document.getElementById("archivedPage").src;
+    versionArray = version2.split("/");
+    version = versionArray[2];
  
 //Test if too low
 if (array[0] == "1.0.0") {
@@ -207,10 +212,11 @@ if (array[0] == "1.0.0") {
   document.getElementById("arrow-left").addEventListener("click", myFunction, false);
  
   function myFunction() {
+      document.getElementById("pv").innerHTML = "1.0.0";
     document.getElementById('archivedPage').src = "/archive/1.0.5/index.html";
   }
 } else {
- 
+ document.getElementById("pv").innerHTML = version;
   back = str.concat("/archive/", buffer3, "/index.html");
   forward = str.concat("/archive/", buffer4, "/index.html");
   //click detection
