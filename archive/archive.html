@@ -117,7 +117,7 @@ if (num2 < 0) {
 //make new num into str
 str = "";
 buffer3 = str.concat(num1, ".", num2, ".", num3);
-console.log(buffer3);
+console.log("VERSION DOWN: " + buffer3);
 testing = false;
 while (testing === false) {
   var request;
@@ -167,7 +167,7 @@ if (num2 > 9) {
 //Make new num into str
 buffer4 = str.concat(num1, ".", num2, ".", num3);
 //normal
- console.log(buffer4);
+ console.log("VERSION UP: " + buffer4);
  
  
  
@@ -211,7 +211,8 @@ while (testing === false) {
     version = versionArray[4];
  
 //Test if too low
-if (array[4] <= "1.0.0") {
+console.log("LOW THING: " + array[4]);
+if (array[4] == "1.0.0") {
   document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
   document.getElementById("arrow-left").addEventListener("click", myFunction, false);
  
