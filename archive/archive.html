@@ -90,39 +90,6 @@ var ActiveXObject;
 var back;
 var forward;
  
-calculate();
-//Test if too low
-console.log("LOW THING: " + array[4]);
-if (array[4] == "1.0.0") {
-  document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
-  document.getElementById("arrow-left").addEventListener("click", myFunction, false);
- 
-  function myFunction() {
-      document.getElementById("pv").innerHTML = "1.0.0";
-    document.getElementById('archivedPage').src = "/archive/1.0.5/index.html";
-calculate();
-  }
-} else {
- document.getElementById("pv").innerHTML = version;
-  back = str.concat("/archive/", buffer3, "/index.html");
-  forward = str.concat("/archive/", buffer4, "/index.html");
-  //click detection
-  document.getElementById("arrow-left").addEventListener("click", myFunction, false);
- 
-  function myFunction() {
-    //forward = str.concat(forward, '/index.html');
-    document.getElementById('archivedPage').src = forward;
-calculate();
-  }
-  document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
- 
-  function myFunctionTwo() {
-    //back = str.concat(back, '/index.html');
-    document.getElementById('archivedPage').src = back;
-calculate();
-  }
-}
-function calculate(){
 url = document.getElementById('archivedPage').src;
     console.log("HERES THE URL: " + url);
     
@@ -242,7 +209,38 @@ while (testing === false) {
     version2 = document.getElementById("archivedPage").src;
     versionArray = version2.split("/");
     version = versionArray[4];
- }
+ 
+
+//Test if too low
+console.log("LOW THING: " + array[4]);
+if (array[4] == "1.0.0") {
+  document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
+  document.getElementById("arrow-left").addEventListener("click", myFunction, false);
+ 
+  function myFunction() {
+      document.getElementById("pv").innerHTML = "1.0.0";
+    document.getElementById('archivedPage').src = "/archive/1.0.5/index.html";
+  }
+} else {
+ document.getElementById("pv").innerHTML = version;
+  back = str.concat("/archive/", buffer3, "/index.html");
+  forward = str.concat("/archive/", buffer4, "/index.html");
+  //click detection
+  document.getElementById("arrow-left").addEventListener("click", myFunction, false);
+ 
+  function myFunction() {
+    //forward = str.concat(forward, '/index.html');
+    document.getElementById('archivedPage').src = forward;
+  }
+  document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
+ 
+  function myFunctionTwo() {
+    //back = str.concat(back, '/index.html');
+    document.getElementById('archivedPage').src = back;
+  }
+}
+
+
         </script> 
    <script>
            
