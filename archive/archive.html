@@ -95,9 +95,9 @@ url = document.getElementById('archivedPage').src;
     
 array = url.split("/");
        console.log(array);
-document.getElementById("pv").innerHTML = array[1];
+document.getElementById("pv").innerHTML = array[4];
        
-num = array[1];
+num = array[4];
 buffer = num[0];
 buffer1 = num[2];
 buffer2 = num[4];
@@ -148,7 +148,7 @@ while (testing === false) {
 }
  
 //VERSION UP
-num = array[1];
+num = array[4];
 buffer = num[0];
 buffer1 = num[2];
 buffer2 = num[4];
@@ -210,7 +210,7 @@ while (testing === false) {
     version = versionArray[4];
  
 //Test if too low
-if (array[1] == "1.0.0") {
+if (array[4] == "1.0.0") {
   document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
   document.getElementById("arrow-left").addEventListener("click", myFunction, false);
  
