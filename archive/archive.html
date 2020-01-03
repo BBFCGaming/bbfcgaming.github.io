@@ -90,6 +90,7 @@ var ActiveXObject;
 var back;
 var forward;
  
+function calculate(){
 url = document.getElementById('archivedPage').src;
     console.log("HERES THE URL: " + url);
     
@@ -209,7 +210,8 @@ while (testing === false) {
     version2 = document.getElementById("archivedPage").src;
     versionArray = version2.split("/");
     version = versionArray[4];
- 
+ }
+calculate();
 //Test if too low
 console.log("LOW THING: " + array[4]);
 if (array[4] == "1.0.0") {
@@ -219,6 +221,7 @@ if (array[4] == "1.0.0") {
   function myFunction() {
       document.getElementById("pv").innerHTML = "1.0.0";
     document.getElementById('archivedPage').src = "/archive/1.0.5/index.html";
+calculate();
   }
 } else {
  document.getElementById("pv").innerHTML = version;
@@ -230,12 +233,14 @@ if (array[4] == "1.0.0") {
   function myFunction() {
     //forward = str.concat(forward, '/index.html');
     document.getElementById('archivedPage').src = forward;
+calculate();
   }
   document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
  
   function myFunctionTwo() {
     //back = str.concat(back, '/index.html');
     document.getElementById('archivedPage').src = back;
+calculate();
   }
 }
         </script> 
