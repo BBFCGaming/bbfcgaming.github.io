@@ -207,6 +207,10 @@ input:checked + .slider:before {
     width: 90%;
 }
 
+#anchor{
+width: 200px;
+display: block;
+}
 #overlayedbox {
   display: flex;
   font-family: OpenSans, arial, "sans-serif";
