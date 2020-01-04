@@ -56,11 +56,11 @@
       
     </div>--> 
   <div id="overlayedbox"> 
-   <div id="arrow-left"></div> 
+   <div id="arrow-left" onclick="calculate();"></div> 
    <div id="pv">
      x.x.x 
    </div> 
-   <div id="arrow-right"></div> 
+   <div id="arrow-right" onclick="calculate();"></div> 
 </div>
    <br> 
    <br> 
@@ -90,6 +90,9 @@ var ActiveXObject;
 var back;
 var forward;
  
+calculate();
+
+function calculate(){
 url = document.getElementById('archivedPage').src;
     console.log("HERES THE URL: " + url);
     
@@ -227,7 +230,8 @@ if (array[4] == "1.0.0") {
   forward = str.concat("/archive/", buffer4, "/index.html");
   //click detection
   document.getElementById("arrow-left").addEventListener("click", myFunction, false);
- 
+ }
+
   function myFunction() {
     //forward = str.concat(forward, '/index.html');
     document.getElementById('archivedPage').src = forward;
