@@ -209,6 +209,7 @@ input:checked + .slider:before {
 
 #overlayedbox {
   display: flex;
+display: block;
   font-family: OpenSans, arial, "sans-serif";
   background: rgba(25,25,25,0.6);
   border-radius: 25px;
