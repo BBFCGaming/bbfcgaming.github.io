@@ -79,7 +79,7 @@
 
             </script>
     <script>   
-    var closed = localStorage.getItem('bannerclosed');
+    var closed = sessionStorage.getItem('bannerclosed');
             if(closed == 'here'){
                 $('#banner').hide();
             }else{
@@ -87,9 +87,10 @@
             }
       }
      
-    $("#closeBanner").click(function() {
-                localStorage.setItem('bannerclosed', 'here');
-        $("#banner").hide();
-    }); 
+      function close(){
+          sessionStorage.setItem('bannerclosed', 'here');
+          $("#banner").hide();
+      }
+    document.getElementById("closeBanner").addEventListener("click", close, false);
     </script>
             </html>
