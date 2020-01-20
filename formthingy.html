@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<!--This is a template for creating pages for games-->
+<html>
+    <script>
+        //Hi BBFC Members! To redirect this game to the under development page, uncomment it (remove // from the beginning)
+        //window.location.replace("https://bbfcgaming.github.io/GameDevelopment.html")
+    </script>
+    <head lang="en">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <!--
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+-->
+        <!--Game title goes here-->
+        <title>Form - BBFC Gaming</title>
+        <!-- Global site tag (gtag.js) - Google Analytics (DON'T CHANGE THIS!!!) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
+        <script type="text/javascript" src="cookieconsent.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129128356-2');
+        </script>
+<style>
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+</style>
+
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "stylesheet.css" />
+<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    </head>
+<body>
+    <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
+    <div id="title">
+        <div style="border:5px solid red; text-align:center;"><h1>BBFC Gaming</h1></div>
+        <!--Buttons-->
+        <div id="buttons">
+            <a href="nojs.html" class="buttons-link">No JavaScript?</a>
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("buttons.html");
+            });
+        </script>
+        <hr>
+        <br>
+        <br>
+    </div>
+    <!--Game Title-->
+    <h2>We will guess if you're a boy or a girl</h2>
+    <br>
+    <br>
+    <!--Embed Game Here-->
+<form action="https://send.pageclip.co/R5VYnoy3FjunrzVXHS08fF1ySDNeo01x" class="pageclip-form" method="post">
+  <label>
+  <input type="radio" name="band" value="lightRed">
+  <img src="http://placehold.it/40x60/0bf/fff&text=A">
+</label>
+
+<label>
+  <input type="radio" name="band" value="pink">
+  <img src="http://placehold.it/40x60/b0f/fff&text=B">
+</label>
+
+<label>
+  <input type="radio" name="band" value="navy">
+  <img src="http://placehold.it/40x60/0bf/fff&text=A">
+</label>
+
+<label>
+  <input type="radio" name="band" value="black">
+  <img src="http://placehold.it/40x60/b0f/fff&text=B">
+</label>
+
+<label>
+  <input type="radio" name="band" value="darkRed">
+  <img src="http://placehold.it/40x60/0bf/fff&text=A">
+</label>
+
+<label>
+  <input type="radio" name="band" value="teal">
+  <img src="http://placehold.it/40x60/b0f/fff&text=B">
+</label>
+
+<label>
+  <input type="radio" name="band" value="lightPurple">
+  <img src="http://placehold.it/40x60/0bf/fff&text=A">
+</label>
+
+<label>
+  <input type="radio" name="band" value="grey">
+  <img src="http://placehold.it/40x60/b0f/fff&text=B">
+</label>
+
+<label>
+  <input type="radio" name="band" value="white">
+  <img src="http://placehold.it/40x60/0bf/fff&text=A">
+</label>
+
+  <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+  <button type="submit" class="pageclip-form__submit">
+    <span>Send</span>
+  </button>
+</form>
+
+    <br>
+    <br>
+    <br>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        Enable Light Mode
+    </div>
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+                    if (e.target.checked) {
+                        var r = confirm("Are you sure you want to switch on light mode? (It won't work if you have a dark mode browser extension installed)");
+                        if(r == true) {
+                            document.documentElement.setAttribute('data-theme', 'light');
+                            localStorage.setItem('theme', 'light'); //add this
+                            sessionStorage.setItem('bgColor', 'purple');
+                            sessionStorage.setItem('textColor', 'white');
+                            sessionStorage.setItem('buttonBg', 'black');
+                            sessionStorage.setItem('versionTextColor', 'black');
+                            sessionStorage.setItem('copyTextColor', 'black');
+                            document.getElementById('banner').src = document.getElementById('banner').src
+                            document.getElementById('version').src = document.getElementById('version').src
+                            document.getElementById('copy').src = document.getElementById('copy').src
+
+                            $(function(){
+                                $("#buttons").load("buttons.html");
+                            });
+
+                        }else {
+                            toggleSwitch.checked = false;
+                        }
+                    }
+                    else {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark'); //add this
+                        sessionStorage.setItem('textColor', 'black');
+                        sessionStorage.setItem('bgColor', 'red');
+                        sessionStorage.setItem('buttonBg', 'blue');
+                        sessionStorage.setItem('versionTextColor', 'white');
+                        sessionStorage.setItem('copyTextColor', 'white');
+                        document.getElementById('banner').src = document.getElementById('banner').src
+                        document.getElementById('version').src = document.getElementById('version').src
+                        document.getElementById('copy').src = document.getElementById('copy').src
+
+                        $(function(){
+                            $("#buttons").load("buttons.html");
+                        });
+                    }    
+                }
+
+
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'light') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+    <div id="myCookieConsent">
+        <a id="cookieButton">Understood</a>
+        <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="privacypolicy.html">More&nbsp;details</a></div>
+    </div>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>
