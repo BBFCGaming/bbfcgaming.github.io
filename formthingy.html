@@ -71,6 +71,17 @@ background: #2ecc71;
         <link rel = "stylesheet"
               type = "text/css"
               href = "stylesheet.css" />
+        
+        <script>
+        function generate(){
+        var x = Math.floor(Math.random() * 101);
+        if(x >= 76){
+            document.getElementById("result").innerHTML = "You are a boy!"
+        }else{
+            document.getElementById("result").innerHTML = "You are a girl!"
+        }
+        }
+    </script>
     </head>
 <body>
     <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
@@ -235,11 +246,11 @@ background: #2ecc71;
     <br>
     
   <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-  <button type="submit" class="pageclip-form__submit">
+  <button type="submit" class="pageclip-form__submit" id="subButton" onclick="generate()">
     <span>Sumbit</span>
   </button>
 </form>
-
+<div id="result"></div>
     <br>
     <br>
     <br>
@@ -308,6 +319,7 @@ background: #2ecc71;
 
         toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
+    
     <div id="myCookieConsent">
         <a id="cookieButton">Understood</a>
         <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="privacypolicy.html">More&nbsp;details</a></div>
