@@ -31,7 +31,7 @@
             gtag('config', 'UA-129128356-2');
         </script>
 <style>
-[type=radio] { 
+.picRadio[type=radio] { 
   position: absolute;
   opacity: 0;
   width: 0;
@@ -39,20 +39,38 @@
 }
 
 /* IMAGE STYLES */
-[type=radio] + img {
+.picRadio[type=radio] + img {
   cursor: pointer;
 }
 
 /* CHECKED STYLES */
-[type=radio]:checked + img {
+.picRadio[type=radio]:checked + img {
   outline: 2px solid #f00;
+}
+    
+    .pageclip-form{position:relative}.pageclip-form__submit{position:relative}.pageclip-form__submit:after{display:inline-block;position:relative;text-indent:-9999em;border:3px solid hsla(0,0%,100%,.3);border-left:3px solid #fff;-webkit-transform:scale(.01) translateZ(0);transform:scale(.01) translateZ(0);border-radius:50%;width:20px;height:20px;content:"";position:absolute;left:50%;top:50%;margin-left:-10px;margin-top:-10px;z-index:2}.pageclip-form__submit.pageclip-form__submit--dark-loader:after{border-color:rgba(0,0,0,.3);border-left-color:#000}.pageclip-form__submit.pageclip-form__submit--start-loading:after{-webkit-animation:.1s linear none a;animation:.1s linear none a}.pageclip-form__submit.pageclip-form__submit--start-loading>span{-webkit-animation:.1s linear none c;animation:.1s linear none c}.pageclip-form__submit.pageclip-form__submit--loading:after{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation:1.2s linear infinite d;animation:1.2s linear infinite d}.pageclip-form__submit.pageclip-form__submit--loading>span{opacity:0}.pageclip-form__submit.pageclip-form__submit--end-loading:after{-webkit-animation:.1s linear none b;animation:.1s linear none b}.pageclip-form__submit.pageclip-form__submit--end-loading>span{-webkit-animation:.1s linear reverse c;animation:.1s linear reverse c}@-webkit-keyframes a{0%{-webkit-transform:scale(.01) translateZ(0);transform:scale(.01) translateZ(0)}50%{-webkit-transform:scale(1.2) translateZ(0);transform:scale(1.2) translateZ(0)}to{-webkit-transform:scale(1) translateZ(0);transform:scale(1) translateZ(0)}}@keyframes a{0%{-webkit-transform:scale(.01) translateZ(0);transform:scale(.01) translateZ(0)}50%{-webkit-transform:scale(1.2) translateZ(0);transform:scale(1.2) translateZ(0)}to{-webkit-transform:scale(1) translateZ(0);transform:scale(1) translateZ(0)}}@-webkit-keyframes b{0%{-webkit-transform:scale(1) translateZ(0);transform:scale(1) translateZ(0)}to{-webkit-transform:scale(.01) translateZ(0);transform:scale(.01) translateZ(0)}}@keyframes b{0%{-webkit-transform:scale(1) translateZ(0);transform:scale(1) translateZ(0)}to{-webkit-transform:scale(.01) translateZ(0);transform:scale(.01) translateZ(0)}}@-webkit-keyframes c{0%{opacity:1}to{opacity:0}}@keyframes c{0%{opacity:1}to{opacity:0}}@-webkit-keyframes d{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes d{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+    
+button[type="submit"]{
+border:0;
+background: none;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #2ecc71;
+padding: 14px 40px;
+outline: none;
+color: white;
+border-radius: 24px;
+transition: 0.25s;
+cursor: pointer;
+}
+button[type="submit"]:hover{
+background: #2ecc71;
 }
 </style>
 
         <link rel = "stylesheet"
               type = "text/css"
               href = "stylesheet.css" />
-<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     </head>
 <body>
     <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
@@ -76,66 +94,149 @@
     <br>
     <br>
     <!--Embed Game Here-->
+    <h3>Pick a Magic Band Color</h3>
 <form action="https://send.pageclip.co/R5VYnoy3FjunrzVXHS08fF1ySDNeo01x" class="pageclip-form" method="post">
   <label>
-  <input type="radio" name="band" value="blue">
+  <input type="radio" class="picRadio" name="band" value="blue">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295354.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="grey">
+  <input type="radio" class="picRadio" name="band" value="grey">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295330.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="green">
+  <input type="radio" class="picRadio" name="band" value="green">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295361.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="orange">
+  <input type="radio" class="picRadio" name="band" value="orange">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295392.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="pink">
+  <input type="radio" class="picRadio" name="band" value="pink">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295378.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="purple">
+  <input type="radio" class="picRadio" name="band" value="purple">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295347.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="red">
+  <input type="radio" class="picRadio" name="band" value="red">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295385.1?$bab_large$" width="80px" height="120px">
 </label>
 
 <label>
-  <input type="radio" name="band" value="yellow">
+  <input type="radio" class="picRadio" name="band" value="yellow">
   <img src="https://cdn-ssl.s7.dsitpr.go.com/is/image/DisneyParks/400020295408.1?$bab_large$" width="80px" height="120px">
 </label>
 <br>
 <br>
+    <hr>
 <br>
 <br>
+    <h3>Which would you rather build?</h3>
 <label>
-<input type="radio" name="activity" value="lightsaber">
-<img src="https://www.ocregister.com/wp-content/uploads/2019/03/OCR-L-DIS-SHOPS-0305-112-1.jpg?w=525" width="360px" height="240px">
+<input type="radio" class="picRadio" name="activity" value="lightsaber">
+<img src="https://www.ocregister.com/wp-content/uploads/2019/03/OCR-L-DIS-SHOPS-0305-112-1.jpg?w=525" width="240px" height="160px">
 </label>
 <label>
-<input type="radio" name="activity" value="droid">
-<img src="https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2019/03/SWGE_Custom_Droids_Merch_0130ZR_0143DR_jrod-768x512-768x400.jpg" width="360px" height="240px">
+<input type="radio" class="picRadio" name="activity" value="droid">
+<img src="https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2019/03/SWGE_Custom_Droids_Merch_0130ZR_0143DR_jrod-768x512-768x400.jpg" width="240px" height="160px">
 </label>
+    <label>
+        <input type="radio" class="picRadio" name="activity" value="neither">
+        <img src="https://imgur.com/jfxJuhL.png" width="240px" height="160px">
+    </label>
 <br>
 <br>
+    <hr>
 <br>
 <br>
+    <h3>Pick a Resturant</h3>
+    <label>
+  <input type="radio" class="picRadio" name="resturant" value="cinderellasTable">
+  <img src="https://vignette.wikia.nocookie.net/disney/images/0/0e/Cinderella%27s_Royal_Table_Sign.jpg/revision/latest?cb=20140123062758" width="240px" height="160px">
+</label>
 
+<label>
+  <input type="radio" class="picRadio" name="resturant" value="akershus">
+  <img src="https://allears.net/wp-content/uploads/archive/dining/images/dining_location_image_49.jpg" width="240px" height="160px">
+</label>
+
+<label>
+  <input type="radio" class="picRadio" name="resturant" value="beastCastle">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTORU4sXuUGsj-vdlGA7dmxsR82y2_RNlxOksQifDveooLI1ln2&s" width="240px" height="160px">
+</label>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h3>Would You Rather</h3>
+        <label>
+  <input type="radio" name="characters" value="characterGreet">Meet Characters at Character Meet and Greets
+            
+</label>
+
+<label>
+  <input type="radio" name="characters" value="characterMeals">Meet Characters at Character Meals
+</label>
+
+<label>
+  <input type="radio" name="characters" value="rideRides">I Would Rather Just Ride Rides
+</label>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+        <h3>Would You Rather Meet</h3>
+        <label>
+  <input type="radio" class="picRadio" name="specChar" value="princesses">
+            <img src="https://cache.undercovertourist.com/blog/2018/10/0919-meeting-princesses-at-disneyland-rainy.jpg" width="240px" height="160px">
+</label>
+
+<label>
+  <input type="radio" name="specChar" class="picRadio" value="mickey">
+    <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1920/1080/75/dam/disney-world/entertainment/animal-kingdom/character-meet-disney-pals-adventurers-outpost/adventurers-outpost-mickey-minnie-16x9.jpg?1576270318726" width="240px" height="160px">
+</label>
+
+<label>
+  <input type="radio" name="specChar" class="picRadio" value="other">
+    <img src="https://www.travelingmom.com/wp-content/uploads/2018/07/Buzz-Woody-Jessie-Hollywood-Studios-800x450.jpg" width="240px" height="160px">
+</label>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h3>Pick a Snack</h3>
+       <label>
+  <input type="radio" class="picRadio" name="snack" value="pretzel">
+            <img src="https://disney.urbantastebud.com/wp-content/uploads/2016/02/IMG_0325-2.jpg" width="130px" height="160px">
+</label>
+
+<label>
+  <input type="radio" name="snack" class="picRadio" value="cinnamonBun">
+    <img src="https://www.bestoforlando.com/assets/upload/articles/top-10-breakfast-snacks-walt-disney-world/BOO_Stella_Mickey-Cinnamon-Roll_700.jpg" width="240px" height="160px">
+</label>
+
+<label>
+  <input type="radio" name="snack" class="picRadio" value="churros">
+    <img src="https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2018/02/Churros2.jpg" width="240px" height="160px">
+</label>
+<br>
+    <br>
+    
   <!-- This button will have a loading spinner. Keep the inner span for best results. -->
   <button type="submit" class="pageclip-form__submit">
-    <span>Send</span>
+    <span>Sumbit</span>
   </button>
 </form>
 
