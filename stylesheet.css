@@ -11,6 +11,17 @@
     --privacy-link-hover: #828282;
     --new-games-div: red;
 }
+/*Make scrollbar less hideous*/
+            ::-webkit-scrollbar{
+                width:3pt;
+            }
+            ::-webkit-scrollbar-track{
+                background: red;
+            }
+            ::-webkit-scrollbar-thumb{
+                background: #ffbf00;
+                border-radius: 10px;
+            }
 #archivedPage {
 
     overflow: hidden;
