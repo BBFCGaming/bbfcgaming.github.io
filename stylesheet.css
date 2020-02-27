@@ -16,10 +16,10 @@
                 width:3pt;
             }
             ::-webkit-scrollbar-track{
-                background: red;
+                background: black;
             }
             ::-webkit-scrollbar-thumb{
-                background: #ffbf00;
+                background: red;
                 border-radius: 10px;
             }
 #archivedPage {

@@ -21,6 +21,20 @@
               href = "stylesheet.css" />
 -->
         <style>
+            :root{
+                overflow-y: hidden;
+            }
+            /*Make scrollbar less hideous*/
+            ::-webkit-scrollbar{
+                width:3pt;
+            }
+            ::-webkit-scrollbar-track{
+                background: black;
+            }
+            ::-webkit-scrollbar-thumb{
+                background: red;
+                border-radius: 10px;
+            }
             a {
              color: white;   
             }
