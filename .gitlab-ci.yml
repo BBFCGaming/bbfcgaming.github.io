@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
   - echo 'Nothing to do...'
-  - cp ./* /public/
+  - cp -rap ./* /public/
   artifacts:
     paths:
     - public
