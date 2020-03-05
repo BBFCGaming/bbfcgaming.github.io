@@ -3,7 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - cp -vvv -rap ./* public/
+  - rsync -av --progress --exclude="public" ./* public/
   - echo "Done copying files"
   artifacts:
     paths:
