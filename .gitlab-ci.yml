@@ -3,9 +3,9 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
-  - mkdir /public
-  - cp -rap ./* /public/
+  - echo "Moving files to public folder..."
+  - mkdir public
+  - cp -vvv -rap ./* public/
   artifacts:
     paths:
     - public
