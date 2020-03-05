@@ -3,8 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo "Moving files to public folder..."
-  - cp -rap ./* public/
+  - cp -r ./* public/
   artifacts:
     paths:
     - public
