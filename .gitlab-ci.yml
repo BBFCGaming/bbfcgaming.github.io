@@ -4,7 +4,6 @@ pages:
   stage: deploy
   script:
   - echo "Moving files to public folder..."
-  - mkdir public
   - cp -vvv -rap ./* public/
   artifacts:
     paths:
