@@ -3,7 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - cp -rap * public || :
+  - "cp -rap * public || :"
   - echo "Done copying files"
   artifacts:
     paths:
