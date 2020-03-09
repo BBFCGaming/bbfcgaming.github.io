@@ -3,6 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
+  - echo "Converting repository to GitLab Pages compatible format..."
   - "cp -rap * public || :"
   - echo "Done copying files"
   artifacts:
