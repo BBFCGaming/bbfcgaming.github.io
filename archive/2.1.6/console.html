@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+    
+            function run(cmd){
+                if(cmd == "help"){
+                    res="Error, help not available"
+                }
+                if(cmd == "ping"){
+                               res="Pong"
+
+                }
+                document.getElementById('output').innerHTML += res + "<br>";
+            }
+            
+            
+
+            
+        </script>
+    </head>
+    <body>
+        <div id="output" style="border:1px solid black; width:100%;"></div>
+        <input type="text" id="cmd" style="width:94%;" autocomplete="off"><button style="width:5%;" onclick="run($('#cmd').val());">Go</button>
+    </body>
+</html>

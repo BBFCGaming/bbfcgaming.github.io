@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<script>
+  // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
+  //window.location.replace("https://bbfcgaming.github.io/development.html")
+  </script>
+
+  
+
+
+    <!--
+
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+
+-->
+  
+  <head>
+<title>People - BBFC Gaming</title>
+<link rel = "stylesheet"
+          type = "text/css"
+          href = "stylesheet.css" />
+</head>
+<body>
+  <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
+<div id="title">
+<div style="border:5px solid red; text-align:center;" href="https://bbfcgaming.github.io"><h1>BBFC Gaming</h1></div>
+<iframe id="buttons" src="buttons.html" height="50px" width="100%" frameBorder="0"></iframe>
+<hr>
+<br>
+<br>
+</div>
+<br>
+<br>
+  <!--
+
+ATTENTION ALL BBFC DEVELOPERS!!!!
+YOU CAN EDIT YOUR NAME HOWEVER YOU LIKE, BUT DON'T CHANGE THE SIZE (Unless you're TurboWafflz, then do whatever you want)
+
+CHANGE THE COLORS OR REPLACE SOME CHARACTERS WITH NUMBERS AND SYMBOLS OR SOMETHING
+
+-->
+  
+  
+  
+<hr>
+<br>
+<img src="TurboWafflz.gif" height="12px" alt="TurboWafflz">- <a href="https://turbowafflz.github.io">turbowafflz.github.io</a> <a style="color: var(--side-text);">(Web Developer/Game Developer)</a>&nbsp; <img src="https://raw.githubusercontent.com/BBFCGaming/bbfcgaming.github.io/master/Loading.gif" height="12px">&nbsp;Taking over company, please wait...
+  <br>
+  <br>
+Bredz <a style="color: var(--side-text);">(President/Game Developer)</a>
+<br>
+  <br>
+
+
+<script>
+var text="Tabulate-"
+var speed=80 
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+   <a style="color: var(--side-text);">(Web Developer/Game Developer)</a>
+<br>
+  <br>
+  NavyRed <a style="color: var(--side-text);">(Something Doer)</a>
+<br>
+  <br>
+  Ghast568 <a style="color: var(--side-text);">(Game Tester)</a>
+  <br>
+  <br>
+  Some other people who are not listed here because they do nothing
+  <br>
+  <br>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+  Enable Light Mode
+</div>
+</body>
+<script>
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+    var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+    if(r == true) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+        sessionStorage.setItem('bgColor', 'purple');
+        sessionStorage.setItem('textColor', 'white');
+        sessionStorage.setItem('buttonBg', 'black');
+        sessionStorage.setItem('versionTextColor', 'black');
+        sessionStorage.setItem('copyTextColor', 'black');
+        document.getElementById('banner').src = document.getElementById('banner').src
+        document.getElementById('buttons').src = document.getElementById('buttons').src
+        document.getElementById('version').src = document.getElementById('version').src
+        document.getElementById('copy').src = document.getElementById('copy').src
+        
+        }else {
+        toggleSwitch.checked = false;
+        }
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+        sessionStorage.setItem('textColor', 'black');
+        sessionStorage.setItem('bgColor', 'red');
+        sessionStorage.setItem('buttonBg', 'blue');
+        sessionStorage.setItem('versionTextColor', 'white');
+        sessionStorage.setItem('copyTextColor', 'white');
+        document.getElementById('banner').src = document.getElementById('banner').src
+        document.getElementById('buttons').src = document.getElementById('buttons').src
+        document.getElementById('version').src = document.getElementById('version').src
+        document.getElementById('copy').src = document.getElementById('copy').src
+    }    
+}
+
+
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'light') {
+        toggleSwitch.checked = true;
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+</html>

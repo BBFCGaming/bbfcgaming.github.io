@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html lang="en">  
+
+
+    <!--
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+-->
+
+    <!--Note to BBFC developers:
+Read devnotes.txt before making any changes!!
+-->
+    <script>
+        // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
+        //window.location.replace("https://bbfcgaming.github.io/development.html")
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (1 !== 1 ){
+            location.replace("terrifying.html");
+        }
+        //ASCII art logo in console
+        console.log('\n██████╗ ██████╗ ███████╗ ██████╗\n██╔══██╗██╔══██╗██╔════╝██╔════╝\n██████╔╝██████╔╝█████╗  ██║     \n██╔══██╗██╔══██╗██╔══╝  ██║     \n██████╔╝██████╔╝██║     ╚██████╗\n╚═════╝ ╚═════╝ ╚═╝      ╚═════╝');
+        var x = 0
+        var cheat = 0
+        setInterval(function(){
+            $('blink').each(function() {
+                $(this).toggle();
+            });
+        }, 250);
+
+
+    </script>
+    <!--
+<script>
+function setCookie(cname, cvalue, exdays) {
+var d = new Date();
+d.setTime(d.getTime() + (exdays*24*60*60*1000));
+var expires = "expires="+ d.toUTCString();
+document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+</script>
+-->
+
+
+    <script src="eastereggcodes.js"></script>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "stylesheet.css" />
+    <head>
+        <link rel="stylesheet" type="text/css" href="clippy.css" media="all">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-129128356-2');
+        </script>
+        <script>
+            $(document).ready(function(){   
+                setTimeout(function () {
+                    $("#cookieConsent").fadeIn(800);
+                }, 4000);
+                $("#closeCookieConsent, .cookieConsentOK").click(function() {
+                    $("#cookieConsent").fadeOut(800);
+                }); 
+            }); 
+        </script>
+
+
+
+
+        <meta name="google-site-verification" content="Io0trlTDx8Uha56hvGg9HZLwlCSCWzgy7ObKIACm54s" />
+        <script src="https://widget.battleforthenet.com/widget.js" async></script>
+
+
+
+        <title>Home - BBFC Gaming</title>
+        <meta name="description" content="We make games. They aren't the worst." />
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+
+    </head>
+    <body>
+        <cheatbanner></cheatbanner>
+        <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
+        <!--<embed style="height:50px; width:100%; " src="banner.html">-->
+        <perishable>
+
+
+
+            <div id="title">
+                <center>
+                    <center><img width="20%" src='image/bbfclogoscaled.png' alt="BBFC Logo" oncontextmenu='eastereggcode(); return false;'></center>
+                </center>
+            </div>
+            <!-- Edit Version Number in version.html-->
+
+            <!--<center><embed style="height:60px;" src="version.html"></center>-->
+            <center><iframe id="version" src="version.html" height="55px" frameBorder="0"></iframe></center>
+
+            <center><div id="savebanner" style="border:5px solid red; width:60%;"><img src='image/savebanner.jpg' onclick='window.open("https://www.battleforthenet.com")' width="100%"><br><button style="background-color:red; color:white" onclick="$('#savebanner').toggle();">No thanks, I want to pay more for a worse internet</button><button style="background-color:green; color:white" onclick="window.open('https://battleforthenet.com');">Show me how I can help</button></div></center>
+
+            <hr>
+            <!--Buttons-->
+            <div id="buttons">
+                Loading buttons... <a href="nojs.html" class="buttons-link">No JavaScript?</a>
+            </div>
+            <script>
+                $(function(){
+                    $("#buttons").load("buttons.html");
+                });
+            </script>
+
+            <hr>
+
+            <br>
+            <!--<div id="gameselect" style="color:var(--color);">-->
+                Featured Games:
+                <hr>
+                <div style="border: 3px solid var(--featured-games-div);">
+                    <h3>Ninja Parkour</h3>
+                    <br>
+                    Be a ninja box as you jump through many exiting levels!
+                    <br>
+                    <br>
+                    <font color="white">
+                        <button onclick='window.open("ninjaparkour.html")'>PLAY!</button>
+                    </font>
+                </div>
+                <br>
+                <br>
+                <div style="border: 3px solid var(--featured-games-div);">
+                    <h3>Gem Factory</h3>
+                    <br>
+                    Become a Gem-Selling Tycoon! Now with Saving!
+                    <br>
+                    <br>
+                    <font color="white">
+                        <button onclick='window.open("gemfactory.html")'>PLAY!</button>
+                    </font>
+                </div>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                </perishable>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                Enable Light Mode
+            </div>
+            <br>
+            <cheatbanner></cheatbanner>
+            <div style="border:2px solid var(--color); background-color: var(--primary-color);">
+
+                <form action="http://thacorag.com/hX9">
+                    <!-- For some reason this was redirecting to an adult website-->
+                    <!--<input type="image" src="button_support-us-by-viewing-an-ad.png" alt="Support us by Viewing an Ad" width="243" height="30">-->
+                </form>
+            </div>
+            <!-- <center><embed src="copyright.html"></center>-->
+            <center><iframe id="copy" src="copyright.html" frameBorder="0"></iframe></center>
+
+            <script>
+                const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+                function switchTheme(e) {
+                    if (e.target.checked) {
+                        var r = confirm("Are you sure you want to switch on light mode? (It hurts my eyes)");
+                        if(r == true) {
+                            document.documentElement.setAttribute('data-theme', 'light');
+                            localStorage.setItem('theme', 'light'); //add this
+                            sessionStorage.setItem('bgColor', 'purple');
+                            sessionStorage.setItem('textColor', 'white');
+                            sessionStorage.setItem('buttonBg', 'black');
+                            sessionStorage.setItem('versionTextColor', 'black');
+                            sessionStorage.setItem('copyTextColor', 'black');
+                            document.getElementById('banner').src = document.getElementById('banner').src
+                            document.getElementById('version').src = document.getElementById('version').src
+                            document.getElementById('copy').src = document.getElementById('copy').src
+
+                            $(function(){
+                                $("#buttons").load("buttons.html");
+                            });
+
+                        }else {
+                            toggleSwitch.checked = false;
+                        }
+                    }
+                    else {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark'); //add this
+                        sessionStorage.setItem('textColor', 'black');
+                        sessionStorage.setItem('bgColor', 'red');
+                        sessionStorage.setItem('buttonBg', 'blue');
+                        sessionStorage.setItem('versionTextColor', 'white');
+                        sessionStorage.setItem('copyTextColor', 'white');
+                        document.getElementById('banner').src = document.getElementById('banner').src
+                        document.getElementById('version').src = document.getElementById('version').src
+                        document.getElementById('copy').src = document.getElementById('copy').src
+
+                        $(function(){
+                            $("#buttons").load("buttons.html");
+                        });
+                    }    
+                }
+
+
+
+                const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+                if (currentTheme) {
+                    document.documentElement.setAttribute('data-theme', currentTheme);
+
+                    if (currentTheme === 'light') {
+                        toggleSwitch.checked = true;
+                    }
+                }
+
+                toggleSwitch.addEventListener('change', switchTheme, false);
+            </script>
+
+            <div id="cookieConsent">
+                <div id="closeCookieConsent">x</div>
+                This website is using cookies. <a href="privacypolicy.html" target="_blank">Learn More</a><a class="cookieConsentOK">That's Fine</a>
+            </div>
+            <!-- Clippy.js -->
+            <script src="clippy.js"></script>
+
+            </body>
+        </html>
+

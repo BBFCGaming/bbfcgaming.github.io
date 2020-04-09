@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <script>
+
+        // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
+        //window.location.replace("https://bbfcgaming.github.io/GameDevelopment.html")
+        //Whenever you make a change, create a new release marking the version up 0.0.1 more
+    </script>
+
+    <!--
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+-->
+
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
+        <script type="text/javascript" src="cookieconsent.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129128356-2');
+        </script>
+
+        <title>HTML5 Games - BBFC Gaming</title>
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "stylesheet.css" />
+    </head>
+    <body>
+        <div id="title">
+            <center><iframe id="banner" src="banner.html" height="50px" width="100%" frameBorder="0"></iframe></center>
+            <center><img style="width:100%; " src='image/bbfc.png' ondblclick='eastereggcode();'></center>
+        </div>
+        <hr>
+        <!--Buttons-->
+        <div id="buttons">
+            <a href="nojs.html" class="buttons-link">No JavaScript?</a>
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("buttons.html");
+            });
+        </script>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <div id="javascriptbuttons">
+            New Games:
+            <hr>
+        </div>
+        <div style="border: 2px solid olive;">
+            <h3>Clicker</h3>
+            <br>
+            HTML5 Clicker
+            <br>
+            <br>
+            <font color="white">
+                <button onclick='window.open("clicker.html")'>GO!</button>
+            </font>
+            <br>
+            <br>
+
+        </div>
+        <br>
+        <br>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            Enable Light Mode
+        </div>
+        <br>
+        <br> 
+        <footer>
+            <center><iframe id="copy" src="copyright.html" frameBorder="0"></iframe></center>
+
+            <a href="http://www.w3.org/html/logo/">
+                <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="133" height="64" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling">
+            </a>
+        </footer>
+
+    </body>
+
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+                    if (e.target.checked) {
+                        var r = confirm("Are you sure you want to switch on light mode? (It won't work if you have a dark mode browser extension installed)");
+                        if(r == true) {
+                            document.documentElement.setAttribute('data-theme', 'light');
+                            localStorage.setItem('theme', 'light'); //add this
+                            sessionStorage.setItem('bgColor', 'purple');
+                            sessionStorage.setItem('textColor', 'white');
+                            sessionStorage.setItem('buttonBg', 'black');
+                            sessionStorage.setItem('versionTextColor', 'black');
+                            sessionStorage.setItem('copyTextColor', 'black');
+                            document.getElementById('banner').src = document.getElementById('banner').src
+                            document.getElementById('version').src = document.getElementById('version').src
+                            document.getElementById('copy').src = document.getElementById('copy').src
+
+                            $(function(){
+                                $("#buttons").load("buttons.html");
+                            });
+
+                        }else {
+                            toggleSwitch.checked = false;
+                        }
+                    }
+                    else {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme', 'dark'); //add this
+                        sessionStorage.setItem('textColor', 'black');
+                        sessionStorage.setItem('bgColor', 'red');
+                        sessionStorage.setItem('buttonBg', 'blue');
+                        sessionStorage.setItem('versionTextColor', 'white');
+                        sessionStorage.setItem('copyTextColor', 'white');
+                        document.getElementById('banner').src = document.getElementById('banner').src
+                        document.getElementById('version').src = document.getElementById('version').src
+                        document.getElementById('copy').src = document.getElementById('copy').src
+
+                        $(function(){
+                            $("#buttons").load("buttons.html");
+                        });
+                    }    
+                }
+
+
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'light') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+    <div id="myCookieConsent">
+        <a id="cookieButton">Understood</a>
+        <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="privacypolicy.html">More&nbsp;details</a></div>
+    </div>
+</html>

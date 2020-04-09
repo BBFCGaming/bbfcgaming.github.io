@@ -1,0 +1,7 @@
+This file is a todo list. Need to remember to do a few thing? Put it here. Need someone else to do something? Put it here.
+Devs check this every now and then so you can know if someone needs you to do something.
+
+Example: TurboWafflz | fix downloads.html, add new game to site
+------------------------------------------
+
+TurboWafflz | Make Google crawl the site again (I think you can do it from search.google.com) (its to update the description)

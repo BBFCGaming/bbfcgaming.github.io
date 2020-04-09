@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+    
+            function run(cmd){
+                if(cmd == "help"){
+                    res="Error, help not available"
+                }
+                if(cmd == "tasklist"){
+                 res="WHY WOULD YOU NEED A TASKLIST? JUST LOOK AT THE PROGRAMS YOU HAVE OPEN! YOU DON'T NEED TO KNOW ANYTHING ABOUT BACKGROUND APPLICATIONS!"   
+                }
+                if(cmd == "ping"){
+                               res="You have panged your IP"
+
+                }
+                document.getElementById('output').innerHTML += res + "<br>";
+            }
+            
+            
+
+            
+        </script>
+    </head>
+    <body>
+        <div id="output" style="border:1px solid black; width:100%;"></div>
+        <input type="text" id="cmd" style="width:94%;" autocomplete="off"><button style="width:5%;" onclick="run($('#cmd').val());">Go</button>
+    </body>
+</html>

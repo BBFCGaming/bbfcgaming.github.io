@@ -1,0 +1,198 @@
+<html>
+ <head> 
+  <style>
+#snapshot-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+#overlayedbox {
+  display: flex;
+  font-family: OpenSans, arial, "sans-serif";
+  background: rgba(25,25,25,0.6);
+  border-radius: 25px;
+  padding: 20px;
+  width: 200;
+  height: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+    color: white;
+  }
+  
+  #arrow-left{
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white; 
+}
+#arrow-right{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  //float: right;
+  }
+ #arrow-right:hover{
+      border-left: 10px solid gray;
+  }
+  #arrow-left:hover{
+      border-right: 10px solid gray;
+  }
+</style> 
+ </head> 
+ <body> 
+     <!--
+  <div id="snapshot-date">
+    Snapshot Date: Dec. 15, 2017 
+  </div> 
+  <br> 
+-->
+  <div id="overlayedbox"> 
+   <div id="arrow-left"></div> 
+   <div id="pv">
+     x.x.x
+   </div> 
+   <div id="arrow-right"></div> 
+   <script>
+     //setup
+   url = $('archivedPage').attr('src');
+    array = url.split("/");
+
+   num = array[0];
+   buffer = num[0];
+   buffer1 = num[2];
+   buffer2 = num[4];
+   //VERSION DOWN
+   num2 = buffer1;
+   num1 = buffer;
+   num3 = buffer2 - 1;
+   if(num3 < 0){
+     num2 = buffer1 - 1;
+       num3 = 9;
+   }
+   if(num2 < 0){
+     num1 = buffer;
+       num1 = num1 - 1;
+       num2 = 9;
+   }
+   //make new num into str
+   str = ""
+   buffer3 = str.concat(num1, ".", num2, ".", num3);
+   testing = false;
+   while(testing == false) {
+   var request;
+if(window.XMLHttpRequest)
+    request = new XMLHttpRequest();
+else
+    request = new ActiveXObject("Microsoft.XMLHTTP");
+request.open('GET', str.concat("https://bbfcgaming.github.io/archive/", buffer3, "/index.html"), false);
+request.send(); // there will be a 'pause' here until the response to come.
+// the object request will be actually modified
+if (request.status === 404) {
+    num3--;
+    if(num3 < 0){
+     num2--;
+       num3 = 9;
+   }
+   if(num2 < 0){
+       num1--;
+       num2 = 9;
+   }
+   //make new num into str
+   str = ""
+   buffer3 = str.concat(num1, ".", num2, ".", num3);
+}else{
+    testing = true;
+    buffer3 = str.concat(num1, ".", num2, ".", num3);
+    break;
+}
+   }
+
+   //VERSION UP
+   num = array[0];
+   buffer = num[0];
+   buffer1 = num[2];
+   buffer2 = num[4];
+   num3 = buffer2*1 + 1;
+   num1 = buffer;
+   num2 = buffer1;
+   if(num3 > 9){
+     num2 = buffer1*1 + 1;
+     num3 = 0;
+   }
+   if(num2 > 9){
+     num2 = 0;
+     num1 = buffer*1 + 1;
+   }
+   //Make new num into str
+   buffer4 = str.concat(num1, ".", num2, ".", num3);
+     //normal
+       
+       
+       
+       
+       testing = false;
+   while(testing == false) {
+   var request;
+if(window.XMLHttpRequest)
+    request = new XMLHttpRequest();
+else
+    request = new ActiveXObject("Microsoft.XMLHTTP");
+request.open('GET', str.concat("https://bbfcgaming.github.io/archive/", buffer4, "/index.html"), false);
+request.send(); // there will be a 'pause' here until the response to come.
+// the object request will be actually modified
+if (request.status === 404) {
+    num3++;
+    if(num3 > 9) {
+        num3 = 0;
+        num2++;
+    }
+    if(num2 > 9) {
+        num2 = 0;
+        num1++;
+    }
+   //make new num into str
+   str = ""
+   buffer4 = str.concat(num1, ".", num2, ".", num3);
+}else{
+    testing = true;
+    buffer4 = str.concat(num1, ".", num2, ".", num3);
+    break;
+}
+   }
+       
+       
+       
+       
+       
+   //Test if too low
+   if(buffer3 == "0.9.9"){
+     document.getElementById("arrow-right").style.borderLeft = "10px solid gray";
+     document.getElementById("arrow-left").addEventListener("click", myFunction, false);
+     function myFunction(){
+       document.getElementById('archivedPage').src = "/archive/1.0.5/index.html";
+     }
+   }else {
+       
+   back = str.concat("/archive/", buffer3, "/index.html");
+   forward = str.concat("/archive/", buffer4, "/index.html");
+       //click detection
+document.getElementById("arrow-left").addEventListener("click", myFunction, false);
+     function myFunction(){
+       document.getElementById('archivedPage').innerHTML = "<iframe id='archivedPage' src=str.concat(forward, '/index.html') width='100%' />";
+     }
+document.getElementById("arrow-right").addEventListener("click", myFunctionTwo, false);
+     function myFunctionTwo(){
+       document.getElementById('archivedPage').innerHTML = "<iframe id='archivedPage' src=str.concat(back, '/index.html') width='100%' />";
+     }
+     }
+     </script> 
+  </div> 
+ </body>
+</html>

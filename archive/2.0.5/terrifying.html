@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <!--
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+-->
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Whoops!</title>
+        <style>
+            body {
+                background-color: black;
+                color: red;
+                font-family: monospace
+            }
+            hr {
+                color: red;
+                background-color:red;
+            }
+            button {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+        <script>
+            console.error("I don't think JavaScript can help you now.");
+        </script>
+    </head>
+    <body>
+        <embed style="height:50px; width:100%; " src="banner.html">
+        <div id="title">
+            <div style="border:5px solid red; text-align:center;" href="https://bbfcgaming.github.io"><h1>BBFC Gaming</h1></div>
+            <hr>
+            <!--Buttons-->
+            <div id="buttons">
+                <a href="nojs.html" class="buttons-link">No JavaScript?</a>
+            </div>
+            <script>
+                $(function(){
+                    $("#buttons").load("buttons.html");
+                });
+            </script>        <br>
+            <br>
+        </div>
+
+        <h1><h1><center>Terrifying error</center></h1></h1>
+        <center><h2>This message should never appear.</h2></center>
+        <h3><center>If this page appears without manually typing the url in or using the code, something has gone terribly wrong and the site has detected that 1 is not equal to itself. If you see this message, either someone made a mistake, your computer is broken, there was a weird glitch, or math has stopped working. Please report this error to us at <a href="mailto:bbfcgaming@gmail.com">bbfcgaming@gmail.com</a></center></h3>
+        </html>

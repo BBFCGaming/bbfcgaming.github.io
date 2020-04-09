@@ -1,0 +1,18 @@
+Notes to BBFC developers:
+
+Most important:
+
+Before editing a file, put your name in editors.txt, after you're done, remove it.
+
+
+Other stuff:
+
+- Whenever you make a change to the website, increase the version number by 0.0.1, and create a new release.
+- If you need to temporarily disable the site, uncomment the lines labeled near the bottom of the javascript on most pages.
+- Whenever you make a change, it will take a few minutes to apply, so be patient.
+- DON'T MESS WITH ANY .html FILES IF YOU DON'T KNOW HTML!!!!
+- If you DO break something, email bbfcgaming+helpibrokeit@gmail.com, if there is no response within a day or two, you can take the file from the previous release, and replace the broken one with it, however please keep the old file as the original name, but with .save at the end.
+- If you are adding a link and you want it to open in a new tab, format it like this: 
+<a href="https://www.yoursitehere.com/" target="_blank">Name of Link</a>
+- Read the text in todo.txt
+- When you add an image, put it in the /image/ folder. Not /images/, /image/

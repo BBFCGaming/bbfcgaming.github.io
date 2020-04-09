@@ -1,0 +1,54 @@
+function GetCookie(name) {
+    var arg=name+"=";
+    var alen=arg.length;
+    var clen=document.cookie.length;
+    var i=0;
+    while (i<clen) {
+      var j=i+alen;
+      if (document.cookie.substring(i,j)==arg)
+        return "here";
+      i=document.cookie.indexOf(" ",i)+1;
+      if (i==0) break;
+    }
+    return null;
+  }
+  function testFirstCookie(){
+      var offset = new Date().getTimezoneOffset();
+      if ((offset >= -180) && (offset <= 240)) { //Europe and America
+          var visit=GetCookie("cookieCompliancyAccepted");
+          if (visit==null){
+             $("#myCookieConsent").fadeIn(800);	// Show warning
+         } else {
+              // Already accepted
+         }		
+      }
+      var offset = new Date().getTimezoneOffset();
+      if ((offset >= -180) && (offset <= 240)) { //Europe and America
+          var visit=GetCookie("saveBannerClosed");
+          console.log(visit);
+          if (visit==null){
+              console.log("show");
+             $("#savebanner").show();	// Show banner
+         } else {
+             console.log("hide");
+              $("#savebanner").hide(); //hidden
+         }		
+      }
+  }
+  $(document).ready(function(){
+      $("#cookieButton").click(function(){
+          console.log('Understood');
+          var expire=new Date();
+          expire=new Date(expire.getTime()+7776000000);
+          document.cookie="cookieCompliancyAccepted=here; expires="+expire+";path=/";
+          $("#myCookieConsent").hide(800);
+      });
+      $("#denySaveBanner").click(function(){
+          console.log('Save Banner Closed');
+          var expire=new Date();
+          expire=new Date(expire.getTime()+604800000);
+          document.cookie="saveBannerClosed=here; expires="+expire+";path=/";
+          $("#savebanner").hide();
+      });
+      testFirstCookie();
+  });

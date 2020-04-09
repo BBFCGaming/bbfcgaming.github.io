@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  
+    <!--
+
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+
+-->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    animateDiv($('.a'));
+        animateDiv($('.b'));
+        animateDiv($('.c'));
+    animateDiv($('.d'));
+    animateDiv($('.e'));
+    animateDiv($('.f'));
+    animateDiv($('.g'));
+    animateDiv($('.h'));
+    animateDiv($('.i'));
+    animateDiv($('.j'));
+    animateDiv($('.k'));
+    animateDiv($('.l'));
+    animateDiv($('.m'));
+    animateDiv($('.n'));
+    animateDiv($('.o'));
+    animateDiv($('.p'));
+    animateDiv($('.q'));
+    animateDiv($('.r'));
+    animateDiv($('.s'));
+    animateDiv($('.t'));
+
+});
+
+function makeNewPosition($container) {
+
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $container.height() - 50;
+    var w = $container.width() - 50;
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+
+    return [nh, nw];
+
+};
+
+function animateDiv($target) {
+    var newq = makeNewPosition($target.parent());
+    var oldq = $target.offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+
+    $target.animate({
+        top: newq[0],
+        left: newq[1]
+    }, speed, function() {
+        animateDiv($target);
+    });
+
+};
+
+function calcSpeed(prev, next) {
+
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+
+    var greatest = x > y ? x : y;
+
+    var speedModifier = 0.1;
+
+    var speed = Math.ceil(greatest / speedModifier);
+
+    return speed;
+
+}
+  // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
+  //window.location.replace("https://bbfcgaming.github.io/development.html")
+  //Whenever you make a change, create a new release marking the version up 0.0.1 more
+  function go() {   
+  var s = document.createElement('script');
+      s.type='text/javascript';
+      document.body.appendChild(s);
+      s.src='asteroids.min.js';
+      void(0);
+    $('temp').html('');
+  }
+    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129128356-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129128356-2');
+</script>
+
+  <script src="https://widget.battleforthenet.com/widget.js" async></script>
+<title>Asteroids - BBFC Gaming</title>
+<style>
+  div#container {height:500px;width:500px;}
+
+div.a {
+width: 50px;
+height:50px;
+ background-color:red;
+position:fixed;
+
+}
+div.b {
+width: 50px;
+height:50px;
+ background-color:blue;
+position:fixed;
+
+}
+div.c {
+width: 50px;
+height:50px;
+ background-color:green;
+position:fixed;
+
+}
+  div.d {
+width: 50px;
+height:50px;
+ background-color:grey;
+position:fixed;
+
+}
+  div.e {
+width: 50px;
+height:50px;
+ background-color:yellow;
+position:fixed;
+
+}
+    div.f {
+width: 50px;
+height:50px;
+ background-color:purple;
+position:fixed;
+
+}
+    div.g {
+width: 50px;
+height:50px;
+ background-color:pink;
+position:fixed;
+
+}
+    div.h {
+width: 50px;
+height:50px;
+ background-color:grey;
+position:fixed;
+
+}
+    div.i {
+width: 50px;
+height:50px;
+ background-color:lightblue;
+position:fixed;
+
+}
+    div.j {
+width: 50px;
+height:50px;
+ background-color:darkgreen;
+position:fixed;
+
+}
+    div.l {
+width: 50px;
+height:50px;
+ background-color:aqua;
+position:fixed;
+
+}
+    div.m {
+width: 50px;
+height:50px;
+ background-color:aquamarine;
+position:fixed;
+
+}
+    div.n {
+width: 50px;
+height:50px;
+ background-color:white;
+position:fixed;
+
+}
+    div.o {
+width: 50px;
+height:50px;
+ background-color:violet;
+position:fixed;
+
+}
+    div.p {
+width: 50px;
+height:50px;
+ background-color:indigo;
+position:fixed;
+
+}
+    div.q {
+width: 50px;
+height:50px;
+ background-color:orange;
+position:fixed;
+
+}
+    div.r {
+width: 50px;
+height:50px;
+ background-color:turquoise;
+position:fixed;
+
+}
+    div.s {
+width: 50px;
+height:50px;
+ background-color:grey;
+position:fixed;
+
+}
+    div.t {
+width: 50px;
+height:50px;
+ background-color:lightgray;
+position:fixed;
+
+}
+body {
+background-color: black;
+color: white;
+font-family: monospace
+}
+hr {
+color: white;
+background-color:black;
+}
+button {
+background-color: blue;
+color: white;
+}
+</style>
+</head>
+  <body>
+    <embed style="height:50px; width:100%; " src="banner.html">
+<div id="title">
+  <img src='bbfc.png' ondblclick='eastereggcode();'>
+    </div>
+    <div style="text-align:center;" <h2>Version 1.1.6<h2></div>
+<hr>
+<embed width=100% height=50px src="buttons.html"></div>
+  <br>
+<br>
+  
+</div>
+<br>
+<br>
+<hr>
+<br>
+  <temp><button onclick="go();">GO</button></temp>
+    <div id="container">
+    <div class='a'></div>
+    <div class='b'></div>
+    <div class='c'></div>
+    <div class='d'></div>
+    <div class='e'></div> 
+      <div class='f'></div>
+    <div class='g'></div>
+    <div class='h'></div>
+    <div class='i'></div>
+    <div class='j'></div> 
+      <div class='k'></div>
+    <div class='l'></div>
+    <div class='m'></div>
+    <div class='n'></div>
+    <div class='o'></div> 
+      <div class='p'></div>
+    <div class='q'></div>
+    <div class='r'></div>
+    <div class='s'></div>
+    <div class='t'></div> 
+</div>
+  <div>
+    <img src="appulisdum.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum1.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum2.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum3.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum4.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum5.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum6.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum7.jpeg" alt="Appul">
+    </div>
+    <div>
+    <img src="appulisdum8.jpeg" alt="Appul">
+  </div>  
+    <div>
+    <img src="appulisdum9.jpeg" alt="Appul">
+  </div>
+    <div>
+    <img src="appulisdum10.jpeg" alt="Appul">
+  </div>
+    </body>
+</html>
