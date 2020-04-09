@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<script>
+  // Hi BBFC developers! To disable the site so it redirects to the under development page, uncomment the next line (remove "//" from the beginning) and commit your changes
+  //window.location.replace("https://bbfcgaming.github.io/development.html")
+  </script>
+
+  
+
+
+    <!--
+
+    ____  ____  ____________   ______                _            
+   / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
+  / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
+                                                         /____/   
+
+-->
+  
+  <head>
+<title>People - BBFC Gaming</title>
+<style>
+body {
+background-color: black;
+color: red;
+font-family: monospace
+}
+hr {
+color: red;
+background-color:red;
+}
+button {
+background-color: blue;
+color: white;
+}
+</style>
+</head>
+<body>
+  <embed style="height:50px; width:100%; " src="banner.html">
+<div id="title">
+<div style="border:5px solid red; text-align:center;" href="https://bbfcgaming.github.io"><h1>BBFC Gaming</h1></div>
+<hr>
+<br>
+<br>
+</div>
+<br>
+<br>
+  <!--
+
+ATTENTION ALL BBFC DEVELOPERS!!!!
+YOU CAN EDIT YOUR NAME HOWEVER YOU LIKE, BUT DON'T CHANGE THE SIZE (Unless you're TurboWafflz, then do whatever you want)
+
+CHANGE THE COLORS OR REPLACE SOME CHARACTERS WITH NUMBERS AND SYMBOLS OR SOMETHING
+
+-->
+  
+  
+  
+<hr>
+<br>
+<img src="TurboWafflz.gif" height="12px" alt="TurboWafflz">- <a href="https://turbowafflz.github.io">turbowafflz.github.io</a> <a style="color:orange;">(Web Developer/Game Developer)</a>&nbsp; <img src="https://raw.githubusercontent.com/BBFCGaming/bbfcgaming.github.io/master/Loading.gif" height="12px">&nbsp;Taking over company, please wait...
+  <br>
+  <br>
+Bredz <a style="color:orange;">(President/Game Developer)</a>
+<br>
+  <br>
+
+
+<script>
+var text="Tabulate-"
+var speed=80 
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+  <a href="https://benjicat.github.io">benjicat.github.io</a> <a style="color:orange;">(Web Developer/Game Developer)</a>
+<br>
+  <br>
+  NavyRed <a style="color:orange;">(Something Doer)</a>
+<br>
+  <br>
+  Ghast568 <a style="color:orange;">(Game Tester)</a>
+  <br>
+  <br>
+  Some other people who are not listed here because they do nothing
+</body>
+</html>
