@@ -58,11 +58,11 @@
     </div>--> 
 <div id="anchor">
   <div id="overlayedbox"> 
-   <div id="arrow-left" title="test"></div> 
+   <div id="arrow-left" title=""></div> 
    <div id="pv">
      x.x.x 
    </div> 
-   <div id="arrow-right" title="test"></div> 
+   <div id="arrow-right" title=""></div> 
 </div>
 </div>
    <br> 
@@ -204,16 +204,20 @@
         
         //make buttons go to new pages on click
         if (version != "1.0.0"){
-        	document.getElementById('arrow-left').style.borderRight = "10px solid white";
+            document.getElementById('arrow-left').title = belowVersion;
+        	document.getElementById('arrow-left').style.borderRight = null;
         document.getElementById("arrow-left").onclick = function(){backInTime(belowVersionURL)};
         }else{
-        	document.getElementById('arrow-left').style.borderRight = "10px solid gray";
+        	document.getElementById('arrow-left').title = "Earliest Version";
+            document.getElementById('arrow-left').style.borderRight = "10px solid gray";
         	document.getElementById("arrow-left").onclick = function(){console.log("oldest version")};
         }
         if(max == false){
-        	document.getElementById('arrow-right').style.borderLeft = "10px solid white";
+            document.getElementById('arrow-right').title = aboveVersion;
+        	document.getElementById('arrow-right').style.borderLeft = null;
         document.getElementById("arrow-right").onclick = function(){forwardInTime(aboveVersionURL)};
         }else{
+            document.getElementById('arrow-right').title = "Most Recent Version";
         	document.getElementById('arrow-right').style.borderLeft = "10px solid gray";
         	document.getElementById("arrow-right").onclick = function(){console.log("highest archived version")};
         }
