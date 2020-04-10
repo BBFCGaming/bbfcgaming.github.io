@@ -227,10 +227,10 @@ margin-right: auto;
 #overlayedbox {
   display: flex;
   font-family: OpenSans, arial, "sans-serif";
-  background: rgba(25,25,25,0.6);
+  background: rgba(75, 75, 75, 0.4);
   border-radius: 25px;
   padding: 20px;
-  width: 200;
+  width: 200px;
   height: 15px;
   text-align: center;
   margin-left: auto;
