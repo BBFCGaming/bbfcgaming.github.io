@@ -3,12 +3,12 @@
 
 
     <!--
-    ____  ____  ____________   ______                _            
+    ____  ____  ____________   ______                _
    / __ )/ __ )/ ____/ ____/  / ____/___ _____ ___  (_)___  ____ _
   / __  / __  / /_  / /      / / __/ __ `/ __ `__ \/ / __ \/ __ `/
- / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ / 
-/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /  
-                                                         /____/   
+ / /_/ / /_/ / __/ / /___   / /_/ / /_/ / / / / / / / / / / /_/ /
+/_____/_____/_/    \____/   \____/\__,_/_/ /_/ /_/_/_/ /_/\__, /
+                                                         /____/
 -->
     <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,16 +36,16 @@
                 border-radius: 10px;
             }
             a {
-             color: white;   
+             color: white;
             }
             a:visited {
-             color: white;   
+             color: white;
             }
             a:hover {
-             color: white;   
+             color: white;
             }
             a:active {
-             color: white;   
+             color: white;
             }
             .banner {
              color: black;
@@ -66,9 +66,9 @@
     </head>
     <body>
 
-        <div id="banner" class="banner" style="border:2px dotted orange; width:100%; "><div id="closeBanner">x</div><center>On December 25<sup>th</sup>, this domain will expire and the site will move back to <a href="bbfcgaming.github.io">bbfcgaming.github.io</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check Out Our <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ" target="_blank" >Youtube Channel!</a></center></div>
+        <div id="banner" class="banner" style="border:2px dotted orange; width:100%; "><div id="closeBanner">x</div><center>Check Out Our <a href="https://www.youtube.com/channel/UC4Eg3V26uXxWY-M639mGDrQ" target="_blank" >Youtube Channel!</a></center></div>
 
-            </body>   
+            </body>
             <script>
 
                 window.dataLayer = window.dataLayer || [];
@@ -84,23 +84,23 @@
                     var backgroundColor = sessionStorage.getItem('bgColor');
 
                     document.getElementById('banner').style.color = textColor;
-                    document.getElementById('banner').style.backgroundColor = backgroundColor; 
-                      
+                    document.getElementById('banner').style.backgroundColor = backgroundColor;
+
                 }
 
 
                 checkBanner();
 
             </script>
-    <script>   
+    <script>
     var closed = sessionStorage.getItem('bannerclosed');
             if(closed == 'here'){
                 $('#banner').hide();
             }else{
                 $('#banner').show();
             }
-      
-     
+
+
       function close(){
           sessionStorage.setItem('bannerclosed', 'here');
           $("#banner").hide();
